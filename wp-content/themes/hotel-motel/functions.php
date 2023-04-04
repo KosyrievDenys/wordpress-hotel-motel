@@ -3,8 +3,17 @@
   //  add_action('init', 'test_post_types');
   add_action('wp_enqueue_scripts', 'add_scripts_and_styles');
   function add_scripts_and_styles() {
-    wp_enqueue_style('style', get_stylesheet_uri());
+    //    wp_enqueue_style('style', get_stylesheet_uri());
+
+    wp_enqueue_style('add_styles', get_template_directory_uri() . '/assets/css/add_styles.css');
   }
+
+  function add_menus() {
+    register_nav_menu('top', 'Меню шапки');
+  }
+
+  add_action('after_setup_theme', 'add_menus');
+
   //
   //    wp_deregister_script('jquery');
   //    wp_register_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js');
@@ -17,13 +26,10 @@
   //  //  add_theme_support('title-tag');
   //  //  add_theme_support('custom-logo');
   //  //
-  //  add_action('after_setup_theme', function () {
-  //    register_nav_menu('top', 'Для шапки');
-  //    register_nav_menu('top', 'Для лендінгу');
-  //    register_nav_menu('footer', 'Для підвалу');
-  //    add_theme_support('post-thumbnails');
-  //  });
-  //
+  //      register_nav_menu('top', 'Для лендінгу');
+  //      register_nav_menu('footer', 'Для підвалу');
+  //      add_theme_support('post-thumbnails'););
+
   //  add_action('widgets_init', function () {
   //    register_sidebar([
   //      'name' => 'Sidebar Right',
