@@ -2,6 +2,7 @@
   //  include_once(__DIR__ . '/inc/test-recent-posts.php');
   //  add_action('init', 'test_post_types');
   add_action('wp_enqueue_scripts', 'add_scripts_and_styles');
+  add_action('after_setup_theme', 'add_menus');
   function add_scripts_and_styles() {
     //    wp_enqueue_style('style', get_stylesheet_uri());
 
@@ -9,10 +10,13 @@
   }
 
   function add_menus() {
-    register_nav_menu('top', 'Меню шапки');
+    add_theme_support('menus');
+    register_nav_menu('header-links', 'header-links');
+    register_nav_menu('footer-find', 'footer-find');
+    register_nav_menu('footer-explore', 'footer-explore');
+    register_nav_menu('footer-about', 'footer-about');
+    register_nav_menu('footer-social', 'footer-social');
   }
-
-  add_action('after_setup_theme', 'add_menus');
 
   //
   //    wp_deregister_script('jquery');

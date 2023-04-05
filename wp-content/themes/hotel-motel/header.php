@@ -28,7 +28,7 @@
     <div class='nav-block'>
       <?php
         wp_nav_menu([
-          'theme_location' => 'top ',
+          'theme_location' => 'header-links',
           'container' => null,
           'item_wrap' => '<ul>%3$s</ul>',
         ]);
