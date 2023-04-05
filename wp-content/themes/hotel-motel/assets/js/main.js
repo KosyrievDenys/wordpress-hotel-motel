@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+console.log('gth')
   //Changing the 'header' when scrolling
   const header = document.getElementsByTagName('header')[0];
   window.addEventListener("scroll", function () {
