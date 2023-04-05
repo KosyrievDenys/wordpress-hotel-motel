@@ -344,24 +344,24 @@
       <img class='back' src='http://localhost/hotel-motel/wp-content/uploads/2023/04/subscription-back.jpg' alt=''>
       <div class='content'>
         <h2>Stay in the know</h2>
-        <p>Sign up for the HotelMOTEL Newsletter and never miss an offer</p>
-        <form>
-          <label>
-            <input type='text' placeholder='Full Name' required />
-          </label>
-          <label>
-            <input type='email' placeholder='Email Adress' required />
-          </label>
-          <div>
-            <label>
-              <input type='text' placeholder='Postcode' required />
-            </label>
-            <button type='submit'>
-              <span>Join</span>
-              <img class='img-right-arrow' src='./assets/img/icons/right-arrow-white.svg' alt=''>
-            </button>
-          </div>
-        </form>
+        <?= do_shortcode('[contact-form-7 id="63" title="Untitled"]'); ?>
+        <!--        <form>-->
+        <!--          <label>-->
+        <!--            <input type='text' placeholder='Full Name' required />-->
+        <!--          </label>-->
+        <!--          <label>-->
+        <!--            <input type='email' placeholder='Email Adress' required />-->
+        <!--          </label>-->
+        <!--          <div>-->
+        <!--            <label>-->
+        <!--              <input type='text' placeholder='Postcode' required />-->
+        <!--            </label>-->
+        <!--            <button type='submit'>-->
+        <!--              <span>Join</span>-->
+        <!--              <img class='img-right-arrow' src='./assets/img/icons/right-arrow-white.svg' alt=''>-->
+        <!--            </button>-->
+        <!--          </div>-->
+        <!--        </form>-->
       </div>
     </section>
     <!--    <section class='info'>-->

@@ -552,6 +552,182 @@ a .div-link img, .item .div-link img {
     width: 42%;
   }
 }
+.banner {
+  min-height: 100%;
+}
+.banner * {
+  color: #fff;
+}
+.banner .back {
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+.banner .back img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.banner .back::after {
+  content: "";
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background-color: black;
+  opacity: 0.4;
+}
+.banner .container {
+  max-width: 915px;
+}
+.banner .wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.banner h1 {
+  max-width: 680px;
+  margin: 250px auto 20px;
+  text-align: center;
+  font-family: "Evensong", sans-serif;
+  font-weight: 400;
+  font-size: 64px;
+}
+
+@media (max-width: 1024px) {
+  .banner h1 {
+    font-size: 40px;
+  }
+}
+.subscription {
+  text-align: center;
+}
+.subscription * {
+  color: #fff;
+}
+.subscription .back {
+  height: 100%;
+  width: 100%;
+  padding-top: 161px;
+  object-fit: cover;
+  display: flex;
+}
+.subscription .content {
+  width: 921px;
+  background: #37393B;
+  border-radius: 24px;
+  padding: 64px 80px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.subscription h2 {
+  font-size: 64px;
+  font-family: "Evensong", sans-serif;
+  margin-bottom: 24px;
+}
+.subscription p {
+  margin-bottom: 40px;
+}
+.subscription form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.subscription form label {
+  width: 30%;
+}
+.subscription form input {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 8px;
+  transition: 0.3s linear;
+}
+.subscription form input:hover {
+  border-bottom: 1px solid rgba(202, 67, 38, 0.2);
+}
+.subscription form div {
+  width: 33%;
+  display: flex;
+}
+.subscription form div label {
+  width: 85%;
+}
+.subscription form button {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.subscription form button:hover {
+  opacity: 0.7;
+  border-bottom: 1px solid rgba(202, 67, 38, 0.2);
+}
+.subscription span {
+  font-size: 14px;
+  margin-right: 14px;
+  transition: 0.3s linear;
+}
+
+@media (max-width: 1024px) {
+  .subscription .content {
+    max-width: 750px;
+    padding: 51px 23px;
+  }
+  .subscription form label {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .subscription form div {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .subscription form div label {
+    width: 91%;
+    padding-bottom: 0;
+  }
+}
+@media (max-width: 768px) {
+  .subscription {
+    padding-top: 25px;
+  }
+  .subscription .back {
+    height: 530px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .subscription .content {
+    min-width: 280px;
+    width: 90%;
+    padding: 51px 33px;
+    top: 25px;
+  }
+  .subscription h2 {
+    font-size: 40px;
+  }
+  .subscription form {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .subscription label, .subscription input {
+    width: 100%;
+  }
+}
 .footer {
   padding: 40px 0 24px;
   background: #CA4326;
@@ -1217,4 +1393,4 @@ a .div-link img, .item .div-link img {
   }
 }
 
-/*# sourceMappingURL=add_styles.css.map */
+/*# sourceMappingURL=main.css.map */
