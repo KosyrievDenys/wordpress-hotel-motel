@@ -344,6 +344,7 @@
       <img class='back' src='http://localhost/hotel-motel/wp-content/uploads/2023/04/subscription-back.jpg' alt=''>
       <div class='content'>
         <h2>Stay in the know</h2>
+        <p>Sign up for the HotelMOTEL Newsletter and never miss an offer</p>
         <?= do_shortcode('[contact-form-7 id="63" title="Untitled"]'); ?>
         <!--        <form>-->
         <!--          <label>-->

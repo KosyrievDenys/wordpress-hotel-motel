@@ -33,10 +33,6 @@
   font-size: 16px;
 }
 
-body {
-  background-color: gray;
-}
-
 html,
 body {
   width: 100%;
@@ -334,6 +330,10 @@ a .div-link img, .item .div-link img {
   height: 14px;
   width: 17px;
   opacity: 0;
+}
+
+.wpcf7-response-output {
+  display: none;
 }
 
 @media (max-width: 1024px) {
@@ -644,10 +644,16 @@ a .div-link img, .item .div-link img {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.subscription form label {
+.subscription form span {
   width: 30%;
+  font-size: 14px;
+  margin-right: 14px;
+  transition: 0.3s linear;
 }
-.subscription form input {
+.subscription form .wpcf7-not-valid-tip {
+  display: none;
+}
+.subscription form .wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required {
   width: 100%;
   background: transparent;
   border: 0;
@@ -655,17 +661,17 @@ a .div-link img, .item .div-link img {
   padding-bottom: 8px;
   transition: 0.3s linear;
 }
-.subscription form input:hover {
+.subscription form .wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required:hover {
   border-bottom: 1px solid rgba(202, 67, 38, 0.2);
 }
 .subscription form div {
   width: 33%;
   display: flex;
 }
-.subscription form div label {
+.subscription form div span {
   width: 85%;
 }
-.subscription form button {
+.subscription form .wpcf7-form-control.has-spinner.wpcf7-submit {
   display: flex;
   align-items: center;
   text-transform: uppercase;
@@ -674,14 +680,12 @@ a .div-link img, .item .div-link img {
   cursor: pointer;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-.subscription form button:hover {
+.subscription form .wpcf7-form-control.has-spinner.wpcf7-submit:hover {
   opacity: 0.7;
   border-bottom: 1px solid rgba(202, 67, 38, 0.2);
 }
-.subscription span {
-  font-size: 14px;
-  margin-right: 14px;
-  transition: 0.3s linear;
+.subscription form .wpcf7-response-output {
+  display: none;
 }
 
 @media (max-width: 1024px) {
@@ -689,7 +693,7 @@ a .div-link img, .item .div-link img {
     max-width: 750px;
     padding: 51px 23px;
   }
-  .subscription form label {
+  .subscription form span {
     width: 100%;
     padding-bottom: 20px;
   }
@@ -697,7 +701,7 @@ a .div-link img, .item .div-link img {
     width: 100%;
     justify-content: space-between;
   }
-  .subscription form div label {
+  .subscription form div span {
     width: 91%;
     padding-bottom: 0;
   }
@@ -724,7 +728,7 @@ a .div-link img, .item .div-link img {
     width: 100%;
     flex-wrap: wrap;
   }
-  .subscription label, .subscription input {
+  .subscription span {
     width: 100%;
   }
 }
