@@ -762,10 +762,15 @@ a .div-link img, .item .div-link img {
 }
 .footer li a {
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
+  justify-content: flex-end;
 }
 .footer li a:hover {
   opacity: 0.5;
+}
+.footer li a ._mi._before.dashicons.dashicons-arrow-right-alt {
+  transform: rotate(-40deg);
 }
 .footer li span {
   margin-right: 10px;

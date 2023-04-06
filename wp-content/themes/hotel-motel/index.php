@@ -3,7 +3,7 @@
   <main class='home'>
     <section class='banner'>
       <div class='back'>
-        <img src='http://localhost/hotel-motel/wp-content/uploads/2023/04/accessible-rooms-1.jpg' alt='' />
+        <img src='<?php echo get_template_directory_uri(); ?>/assets/img/accessible-rooms-1.jpg' alt='' />
       </div>
       <div class='container'>
         <div class='wrapper'>
@@ -341,28 +341,11 @@
     <!--      </div>-->
     <!--    </section>-->
     <section class='subscription'>
-      <img class='back' src='http://localhost/hotel-motel/wp-content/uploads/2023/04/subscription-back.jpg' alt=''>
+      <img class='back' src='<?php echo get_template_directory_uri(); ?>/assets/img/subscription-back.jpg' alt='' />
       <div class='content'>
         <h2>Stay in the know</h2>
         <p>Sign up for the HotelMOTEL Newsletter and never miss an offer</p>
         <?= do_shortcode('[contact-form-7 id="63" title="Untitled"]'); ?>
-        <!--        <form>-->
-        <!--          <label>-->
-        <!--            <input type='text' placeholder='Full Name' required />-->
-        <!--          </label>-->
-        <!--          <label>-->
-        <!--            <input type='email' placeholder='Email Adress' required />-->
-        <!--          </label>-->
-        <!--          <div>-->
-        <!--            <label>-->
-        <!--              <input type='text' placeholder='Postcode' required />-->
-        <!--            </label>-->
-        <!--            <button type='submit'>-->
-        <!--              <span>Join</span>-->
-        <!--              <img class='img-right-arrow' src='./assets/img/icons/right-arrow-white.svg' alt=''>-->
-        <!--            </button>-->
-        <!--          </div>-->
-        <!--        </form>-->
       </div>
     </section>
     <!--    <section class='info'>-->

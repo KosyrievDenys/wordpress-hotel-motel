@@ -25,10 +25,15 @@
       font-weight: 400;
     }
     a {
-      display:     flex;
-      align-items: center;
+      display:         flex;
+      flex-direction:  row-reverse;
+      align-items:     center;
+      justify-content: flex-end;
       &:hover {
         opacity: .5;
+      }
+      ._mi._before.dashicons.dashicons-arrow-right-alt {
+        transform: rotate(-40deg);
       }
     }
     span {

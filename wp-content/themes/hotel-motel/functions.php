@@ -12,11 +12,11 @@
 
   function add_menus() {
     add_theme_support('menus');
-    register_nav_menu('header-links', 'header-links');
-    register_nav_menu('footer-find', 'footer-find');
-    register_nav_menu('footer-explore', 'footer-explore');
-    register_nav_menu('footer-about', 'footer-about');
-    register_nav_menu('footer-social', 'footer-social');
+    register_nav_menu('header-links', 'Header links');
+    register_nav_menu('footer-find', 'Footer find');
+    register_nav_menu('footer-explore', 'Footer explore');
+    register_nav_menu('footer-about', 'Footer about');
+    register_nav_menu('footer-social', 'Footer social');
   }
 
   //
