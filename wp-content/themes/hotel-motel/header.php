@@ -31,25 +31,3 @@
     </div>
   </div>
 </header>
-<!--<header class='header'>-->
-<!--  <div class='container'>-->
-<!--    <div>-->
-<!--      <a href='--><?php //echo home_url() ?><!--' class='logo'>--><?php //bloginfo('name') ?><!--</a>-->
-<!--      <p>Header</p>-->
-<!--      <nav>-->
-<!--        --><?php
-  //          wp_nav_menu([
-  //            'theme_location' => 'top ',
-  //            'container' => null,
-  //            'item_wrap' => '<ul>%3$s</ul>',
-  //          ]);
-  //        ?>
-<!--      </nav>-->
-<!--    </div>-->
-<!--    --><?php //if (!is_page() && is_active_sidebar('sidebar-top')): ?>
-<!--      <div>-->
-<!--        --><?php //dynamic_sidebar('sidebar-top') ?>
-<!--      </div>-->
-<!--    --><?php //endif; ?>
-<!--  </div>-->
-<!--</header>-->
