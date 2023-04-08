@@ -7,96 +7,110 @@
       </div>
       <div class='container'>
         <div class='wrapper'>
-          <h1><?php echo get_field('main_title') ?></h1>
-          <form>
-            <label>
-              <span>When</span>
-              <input type='date' required />
-            </label>
-            <label>
-              <span>Guests</span>
-              <select>
-                <option>Select Guests</option>
-              </select>
-            </label>
-            <button type='submit' class='intro-btn btn-scarlet'>
-              <span class='intro-btn-p'>Check availability</span>
-              <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M10.125 1.25L16.875 8M16.875 8L10.125 14.75M16.875 8H0" stroke="white" />
-              </svg>
-            </button>
-          </form>
+          <h1><?php echo get_field('banner_title_home') ?></h1>
+          <?= do_shortcode('[contact-form-7 id="63" title="Untitled"]'); ?>
+          <!--          <form>-->
+          <!--            <label>-->
+          <!--              <span>When</span>-->
+          <!--              <input type='date' required />-->
+          <!--            </label>-->
+          <!--            <label>-->
+          <!--              <span>Guests</span>-->
+          <!--              <select>-->
+          <!--                <option>Select Guests</option>-->
+          <!--              </select>-->
+          <!--            </label>-->
+          <!--            <button type='submit' class='intro-btn btn-scarlet'>-->
+          <!--              <span class='intro-btn-p'>Check availability</span>-->
+          <!--              <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+          <!--                <path d="M10.125 1.25L16.875 8M16.875 8L10.125 14.75M16.875 8H0" stroke="white" />-->
+          <!--              </svg>-->
+          <!--            </button>-->
+          <!--          </form>-->
         </div>
       </div>
     </section>
-    <!--    <section class='welcome'>-->
-    <!--      <div class='container'>-->
-    <!--        <div class='wrapper'>-->
-    <!--          <div class='contacts'>-->
-    <!--            <h2>Welcome to HotelMOTEL, Adelaide</h2>-->
-    <!--            <p class='description'>Need to make a getaway? It’s always the right time to pull up at HotelMOTEL. Comfort,-->
-    <!--              stylish-->
-    <!--              accommodation-->
-    <!--              in Adelaide never looked so good. Every room is a new chip off the old block. </p>-->
-    <!--            <h3>Find Us</h3>-->
-    <!--            <p class='address'>216-225 South Terrace, Adelaide SA 5000</p>-->
-    <!--            <ul>-->
-    <!--              <li>-->
-    <!--                <img src='./assets/img/icons/phone.svg' alt=''>-->
-    <!--                <a href='tel:+61 8 8368 9900'>+61 8 8368 9900</a>-->
-    <!--              </li>-->
-    <!--              <li>-->
-    <!--                <img src='./assets/img/icons/mail.svg' alt=''>-->
-    <!--                <a href='mailto:myemail@gmail.com'>Email</a>-->
-    <!--              </li>-->
-    <!--              <li>-->
-    <!--                <img src='./assets/img/icons/loc.svg' alt=''>-->
-    <!--                <a href='#'>Parking & Directions</a>-->
-    <!--              </li>-->
-    <!--            </ul>-->
-    <!--          </div>-->
-    <!--          <div class='facilities'>-->
-    <!--            <div class='content'>-->
-    <!--              <h2>Facilities & Amenities</h2>-->
-    <!--              <div class='facilities-wrapper'>-->
-    <!--                <ul class='items'>-->
-    <!--                  <li>-->
-    <!--                    <img src='./assets/img/icons/wifi.svg' alt=''>-->
-    <!--                    <p>Free Wi-Fi</p>-->
-    <!--                  </li>-->
-    <!--                  <li>-->
-    <!--                    <img src='./assets/img/icons/reception.svg' alt=''>-->
-    <!--                    <p>24hr Reception</p>-->
-    <!--                  </li>-->
-    <!--                  <li>-->
-    <!--                    <img src='./assets/img/icons/parking.svg' alt=''>-->
-    <!--                    <p>Parking</p>-->
-    <!--                  </li>-->
-    <!--                  <li>-->
-    <!--                    <img src='./assets/img/icons/restaurant.svg' alt=''>-->
-    <!--                    <p>Restaurant</p>-->
-    <!--                  </li>-->
-    <!--                  <li>-->
-    <!--                    <img src='./assets/img/icons/gym.svg' alt=''>-->
-    <!--                    <p>Gym</p>-->
-    <!--                  </li>-->
-    <!--                  <li>-->
-    <!--                    <img src='./assets/img/icons/pool.svg' alt=''>-->
-    <!--                    <p>Pool</p>-->
-    <!--                  </li>-->
-    <!--                </ul>-->
-    <!--                <a href='#'>See more</a>-->
-    <!--              </div>-->
-    <!--            </div>-->
-    <!--            <label>-->
-    <!--              <select class='welcome-select'>-->
-    <!--                <option>Fully flexible cancellation.</option>-->
-    <!--              </select>-->
-    <!--            </label>-->
-    <!--          </div>-->
-    <!--        </div>-->
-    <!--      </div>-->
-    <!--    </section>-->
+    <section class='welcome'>
+      <div class='container'>
+        <div class='wrapper'>
+          <div class='contacts'>
+            <h2><?php echo get_field('welcome_title') ?></h2>
+            <p class='description'>
+              <?php echo get_field('welcome_description') ?>
+            </p>
+            <h3><?php echo get_field('welcome_subtitle_1') ?></h3>
+            <p class='address'><?php echo get_field('welcome_adress') ?></p>
+            <?php
+              wp_nav_menu([
+                'theme_location' => 'welcome-find-us',
+                'container' => null,
+                'item_wrap' => '<ul>%3$s</ul>',
+              ]);
+            ?>
+            <!--            <ul>-->
+            <!--              <li>-->
+            <!--                <img src='./assets/img/icons/phone.svg' alt=''>-->
+            <!--                <a href='tel:+61 8 8368 9900'>+61 8 8368 9900</a>-->
+            <!--              </li>-->
+            <!--              <li>-->
+            <!--                <img src='./assets/img/icons/mail.svg' alt=''>-->
+            <!--                <a href='mailto:myemail@gmail.com'>Email</a>-->
+            <!--              </li>-->
+            <!--              <li>-->
+            <!--                <img src='./assets/img/icons/loc.svg' alt=''>-->
+            <!--                <a href='#'>Parking & Directions</a>-->
+            <!--              </li>-->
+            <!--            </ul>-->
+          </div>
+          <div class='facilities'>
+            <div class='content'>
+              <h2><?php echo get_field('welcome_subtitle_2') ?></h2>
+              <div class='facilities-wrapper'>
+                <?php
+                  wp_nav_menu([
+                    'theme_location' => 'welcome-facilities',
+                    'container' => null,
+                    'item_wrap' => '<ul>%3$s</ul>',
+                  ]);
+                ?>
+                <!--                <ul class='items'>-->
+                <!--                  <li>-->
+                <!--                    <img src='./assets/img/icons/wifi.svg' alt=''>-->
+                <!--                    <p>Free Wi-Fi</p>-->
+                <!--                  </li>-->
+                <!--                  <li>-->
+                <!--                    <img src='./assets/img/icons/reception.svg' alt=''>-->
+                <!--                    <p>24hr Reception</p>-->
+                <!--                  </li>-->
+                <!--                  <li>-->
+                <!--                    <img src='./assets/img/icons/parking.svg' alt=''>-->
+                <!--                    <p>Parking</p>-->
+                <!--                  </li>-->
+                <!--                  <li>-->
+                <!--                    <img src='./assets/img/icons/restaurant.svg' alt=''>-->
+                <!--                    <p>Restaurant</p>-->
+                <!--                  </li>-->
+                <!--                  <li>-->
+                <!--                    <img src='./assets/img/icons/gym.svg' alt=''>-->
+                <!--                    <p>Gym</p>-->
+                <!--                  </li>-->
+                <!--                  <li>-->
+                <!--                    <img src='./assets/img/icons/pool.svg' alt=''>-->
+                <!--                    <p>Pool</p>-->
+                <!--                  </li>-->
+                <!--                </ul>-->
+              </div>
+              <a href='#'>See more</a>
+            </div>
+            <label>
+              <select class='welcome-select'>
+                <option>Fully flexible cancellation.</option>
+              </select>
+            </label>
+          </div>
+        </div>
+      </div>
+    </section>
     <!--    <section class='rooms'>-->
     <!--      <div class='container'>-->
     <!--        <h2>Our Rooms at HotelMOTEL</h2>-->
@@ -209,35 +223,35 @@
     <!--        <div class='swiper-scrollbar'></div>-->
     <!--      </div>-->
     <!--    </section>-->
-    <!--    <section class='events'>-->
-    <!--      <div class='container'>-->
-    <!--        <img class='back' src='./assets/img/home-events.png' alt=''>-->
-    <!--        <div class='block-content'>-->
-    <!--          <div class='content'>-->
-    <!--            <h2>Host an Event</h2>-->
-    <!--            <p>South Australia’s most impressive event venues are at your doorstep. With stunning spaces across the-->
-    <!--              award-winning Adelaide Oval Functions & Events and Oval Hotel, we host gatherings of all sizes and styles.-->
-    <!--              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores eligendi ipsam quo. Alias beatae,-->
-    <!--              consectetur explicabo illum laudantium nihil perspiciatis quibusdam quisquam repudiandae sunt suscipit totam-->
-    <!--              voluptates. Consequatur, itaque, libero.-->
-    <!--            </p>-->
-    <!--            <img class='img' src='./assets/img/home-events.png' alt=''>-->
-    <!--            <a href='#'>-->
-    <!--              <span>Private Dining</span>-->
-    <!--              <img class='img-right-arrow' src='./assets/img/icons/right-arrow-white.svg' alt=''>-->
-    <!--            </a>-->
-    <!--            <a href='#'>-->
-    <!--              <span>Private Dining</span>-->
-    <!--              <img class='img-right-arrow' src='./assets/img/icons/right-arrow-white.svg' alt=''>-->
-    <!--            </a>-->
-    <!--            <a href='#'>-->
-    <!--              <span>Weddings</span>-->
-    <!--              <img class='img-right-arrow' src='./assets/img/icons/right-arrow-white.svg' alt=''>-->
-    <!--            </a>-->
-    <!--          </div>-->
-    <!--        </div>-->
-    <!--      </div>-->
-    <!--    </section>-->
+        <section class='events'>
+          <div class='container'>
+            <img class='back' src='./assets/img/home-events.png' alt=''>
+            <div class='block-content'>
+              <div class='content'>
+                <h2>Host an Event</h2>
+                <p>South Australia’s most impressive event venues are at your doorstep. With stunning spaces across the
+                  award-winning Adelaide Oval Functions & Events and Oval Hotel, we host gatherings of all sizes and styles.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores eligendi ipsam quo. Alias beatae,
+                  consectetur explicabo illum laudantium nihil perspiciatis quibusdam quisquam repudiandae sunt suscipit totam
+                  voluptates. Consequatur, itaque, libero.
+                </p>
+                <img class='img' src='./assets/img/home-events.png' alt=''>
+                <a href='#'>
+                  <span>Private Dining</span>
+                  <img class='img-right-arrow' src='./assets/img/icons/right-arrow-white.svg' alt=''>
+                </a>
+                <a href='#'>
+                  <span>Private Dining</span>
+                  <img class='img-right-arrow' src='./assets/img/icons/right-arrow-white.svg' alt=''>
+                </a>
+                <a href='#'>
+                  <span>Weddings</span>
+                  <img class='img-right-arrow' src='./assets/img/icons/right-arrow-white.svg' alt=''>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
     <!--    <section class='model-1-swiper'>-->
     <!--      <div class='container'>-->
     <!--        <h2>Offers & Promotions</h2>-->
@@ -343,10 +357,8 @@
     <section class='subscription'>
       <img class='back' src='<?php echo get_template_directory_uri(); ?>/assets/img/subscription-back.jpg' alt='' />
       <div class='content'>
-        <!--        <h2>Stay in the know</h2>-->
-        <h2><?php echo get_field('title') ?></h2>
-        <p><?php  the_field('subtitle') ?></p>
-        <!--        <p>Sign up for the HotelMOTEL Newsletter and never miss an offer</p>-->
+        <h2><?php echo get_field('subscription_title') ?></h2>
+        <p><?php the_field('subscription_subtitle') ?></p>
         <?= do_shortcode('[contact-form-7 id="63" title="Untitled"]'); ?>
       </div>
     </section>

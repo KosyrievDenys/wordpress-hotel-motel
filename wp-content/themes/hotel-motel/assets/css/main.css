@@ -881,8 +881,10 @@ a .div-link img, .item .div-link img {
 .home .welcome .container {
   max-width: 1129px;
 }
-.home .welcome img {
+.home .welcome i {
   height: 24px;
+  margin-right: 20px;
+  color: #CA4326;
 }
 .home .welcome .contacts {
   width: 48%;
