@@ -17,7 +17,7 @@
     margin-right: 100px;
   }
   ul {
-    padding: 0 10px 40px;
+    padding: 0 0 40px;
   }
   li {
     margin-bottom: 10px;
@@ -35,13 +35,12 @@
       ._mi._before.dashicons.dashicons-arrow-right-alt {
         transform: rotate(-40deg);
       }
-    }
-    span {
-      margin-right: 10px;
+      .menu-image-title-after.menu-image-title {
+        margin-right: 10px;
+        padding-left: 0;
+      }
     }
     img {
-      width:     10px;
-      height:    11px;
       transform: rotate(-40deg);
     }
   }

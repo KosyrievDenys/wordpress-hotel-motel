@@ -752,7 +752,7 @@ a .div-link img, .item .div-link img {
   margin-right: 100px;
 }
 .footer ul {
-  padding: 0 10px 40px;
+  padding: 0 0 40px;
 }
 .footer li {
   margin-bottom: 10px;
@@ -772,12 +772,11 @@ a .div-link img, .item .div-link img {
 .footer li a ._mi._before.dashicons.dashicons-arrow-right-alt {
   transform: rotate(-40deg);
 }
-.footer li span {
+.footer li a .menu-image-title-after.menu-image-title {
   margin-right: 10px;
+  padding-left: 0;
 }
 .footer li img {
-  width: 10px;
-  height: 11px;
   transform: rotate(-40deg);
 }
 .footer .copyright {
