@@ -223,35 +223,27 @@
     <!--        <div class='swiper-scrollbar'></div>-->
     <!--      </div>-->
     <!--    </section>-->
-        <section class='events'>
-          <div class='container'>
-            <img class='back' src='./assets/img/home-events.png' alt=''>
-            <div class='block-content'>
-              <div class='content'>
-                <h2>Host an Event</h2>
-                <p>South Australia’s most impressive event venues are at your doorstep. With stunning spaces across the
-                  award-winning Adelaide Oval Functions & Events and Oval Hotel, we host gatherings of all sizes and styles.
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores eligendi ipsam quo. Alias beatae,
-                  consectetur explicabo illum laudantium nihil perspiciatis quibusdam quisquam repudiandae sunt suscipit totam
-                  voluptates. Consequatur, itaque, libero.
-                </p>
-                <img class='img' src='./assets/img/home-events.png' alt=''>
-                <a href='#'>
-                  <span>Private Dining</span>
-                  <img class='img-right-arrow' src='./assets/img/icons/right-arrow-white.svg' alt=''>
-                </a>
-                <a href='#'>
-                  <span>Private Dining</span>
-                  <img class='img-right-arrow' src='./assets/img/icons/right-arrow-white.svg' alt=''>
-                </a>
-                <a href='#'>
-                  <span>Weddings</span>
-                  <img class='img-right-arrow' src='./assets/img/icons/right-arrow-white.svg' alt=''>
-                </a>
-              </div>
-            </div>
+    <section class='events'>
+      <div class='container'>
+        <img class='back' src='<?php echo get_template_directory_uri(); ?>/assets/img/home-events.png' alt=''>
+        <div class='block-content'>
+          <div class='content'>
+            <h2><?php echo get_field('events_title') ?></h2>
+            <p>
+              <?php echo get_field('events_description') ?>
+            </p>
+            <img class='img' src='<?php echo get_template_directory_uri(); ?>/assets/img/home-events.png' alt=''>
+            <?php
+              wp_nav_menu([
+                'theme_location' => 'events',
+                'container' => null,
+                'item_wrap' => '<ul>%3$s</ul>',
+              ]);
+            ?>
           </div>
-        </section>
+        </div>
+      </div>
+    </section>
     <!--    <section class='model-1-swiper'>-->
     <!--      <div class='container'>-->
     <!--        <h2>Offers & Promotions</h2>-->

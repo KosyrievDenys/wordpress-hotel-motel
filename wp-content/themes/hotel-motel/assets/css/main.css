@@ -953,8 +953,12 @@ a .div-link img, .item .div-link img {
   white-space: nowrap;
   margin-bottom: 20px;
 }
+.home .welcome .facilities ul span {
+  text-transform: none;
+  padding-left: 0;
+}
 .home .welcome .facilities ul img {
-  margin-right: 15px;
+  margin-right: 10px;
 }
 .home .welcome .facilities a {
   width: 87px;
