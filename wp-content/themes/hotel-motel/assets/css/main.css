@@ -821,6 +821,58 @@ a .div-link img, .item .div-link img {
     margin-bottom: 10px;
   }
 }
+.info {
+  background: #37393B;
+  padding: 104px 0 196px;
+}
+.info * {
+  color: #fff;
+}
+.info .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.info .info-logo {
+  max-height: 140px;
+  max-width: 410px;
+  width: 100%;
+  margin-right: 165px;
+}
+.info ul {
+  width: 52%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.info li {
+  width: 45%;
+  min-width: 265px;
+  display: flex;
+  align-items: center;
+  margin: 0 20px 20px 0;
+}
+.info li img {
+  margin-right: 16px;
+  height: 32px;
+  width: 32px;
+}
+
+@media (max-width: 1024px) {
+  .info {
+    padding: 40px 0 45px;
+  }
+  .info .wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .info .info-logo {
+    margin: 0 100px 40px;
+  }
+  .info ul {
+    width: 100%;
+    justify-content: center;
+  }
+}
 .home .banner .back img {
   height: 100%;
 }

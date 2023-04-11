@@ -354,31 +354,7 @@
         <?= do_shortcode('[contact-form-7 id="63" title="Untitled"]'); ?>
       </div>
     </section>
-    <!--    <section class='info'>-->
-    <!--      <div class='container'>-->
-    <!--        <div class='wrapper'>-->
-    <!--          <img class='info-logo' src='./assets/img/info-logo.png' alt=''>-->
-    <!--          <ul>-->
-    <!--            <li>-->
-    <!--              <img src='./assets/img/icons/info-1.svg' alt=''>-->
-    <!--              <p>Discounts off the best rates online</p>-->
-    <!--            </li>-->
-    <!--            <li>-->
-    <!--              <img src='./assets/img/icons/info-2.svg' alt=''>-->
-    <!--              <p>Earn & redeem points</p>-->
-    <!--            </li>-->
-    <!--            <li>-->
-    <!--              <img src='./assets/img/icons/info-3.svg' alt=''>-->
-    <!--              <p>Drink & dine for less</p>-->
-    <!--            </li>-->
-    <!--            <li>-->
-    <!--              <img src='./assets/img/icons/info-4.svg' alt=''>-->
-    <!--              <p>VIP benefits & extras</p>-->
-    <!--            </li>-->
-    <!--          </ul>-->
-    <!--        </div>-->
-    <!--      </div>-->
-    <!--    </section>-->
+    <?php include 'info.php'; ?>
   </main>
 
 <?php get_footer(); ?>
