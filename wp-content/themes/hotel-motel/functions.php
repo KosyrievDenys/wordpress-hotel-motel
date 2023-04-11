@@ -17,9 +17,6 @@
     register_nav_menu('footer-explore', 'Footer explore');
     register_nav_menu('footer-about', 'Footer about');
     register_nav_menu('footer-social', 'Footer social');
-    register_nav_menu('welcome-find-us', 'Welcome find us');
-    register_nav_menu('welcome-facilities', 'Welcome facilities');
-    register_nav_menu('events', 'Events');
   }
 
   //    wp_deregister_script('jquery');

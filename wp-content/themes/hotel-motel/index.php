@@ -40,13 +40,35 @@
             </p>
             <h3><?php echo get_field('welcome_subtitle_1') ?></h3>
             <p class='address'><?php echo get_field('welcome_adress') ?></p>
-            <?php
-              wp_nav_menu([
-                'theme_location' => 'welcome-find-us',
-                'container' => null,
-                'item_wrap' => '<ul>%3$s</ul>',
-              ]);
-            ?>
+            <?php if (have_rows('list_find_us')): ?>
+              <ul class="slides">
+                <?php while (have_rows('list_find_us')): the_row();
+                  $tel = get_sub_field('tel');
+                  $email = get_sub_field('email');
+                  $location = get_sub_field('location');
+                  ?>
+                  <li>
+                    <img src='<?php echo get_template_directory_uri(); ?>/assets/img/icons/phone.svg' alt=''>
+                    <p><?php echo $tel ?></p>
+                  </li>
+                  <li>
+                    <img src='<?php echo get_template_directory_uri(); ?>/assets/img/icons/mail.svg' alt=''>
+                    <p><?php echo $email ?></p>
+                  </li>
+                  <li>
+                    <img src='<?php echo get_template_directory_uri(); ?>/assets/img/icons/loc.svg' alt=''>
+                    <p><?php echo $location ?></p>
+                  </li>
+                <?php endwhile; ?>
+              </ul>
+            <?php endif; ?>
+            <!--            --><?php
+              //              wp_nav_menu([
+              //                'theme_location' => 'welcome-find-us',
+              //                'container' => null,
+              //                'item_wrap' => '<ul>%3$s</ul>',
+              //              ]);
+              //            ?>
             <!--            <ul>-->
             <!--              <li>-->
             <!--                <img src='./assets/img/icons/phone.svg' alt=''>-->
@@ -66,13 +88,50 @@
             <div class='content'>
               <h2><?php echo get_field('welcome_subtitle_2') ?></h2>
               <div class='facilities-wrapper'>
-                <?php
-                  wp_nav_menu([
-                    'theme_location' => 'welcome-facilities',
-                    'container' => null,
-                    'item_wrap' => '<ul>%3$s</ul>',
-                  ]);
-                ?>
+                <?php if (have_rows('list_fecilities')): ?>
+                  <ul class="slides">
+                    <?php while (have_rows('list_fecilities')): the_row();
+                      $wifi = get_sub_field('wifi');
+                      $reception = get_sub_field('reception');
+                      $parking = get_sub_field('parking');
+                      $restaurant = get_sub_field('restaurant');
+                      $gym = get_sub_field('gym');
+                      $pool = get_sub_field('pool');
+                      ?>
+                      <li>
+                        <img src='<?php echo get_template_directory_uri(); ?>/assets/img/icons/wifi.svg' alt=''>
+                        <p><?php echo $wifi ?></p>
+                      </li>
+                      <li>
+                        <img src='<?php echo get_template_directory_uri(); ?>/assets/img/icons/reception.svg' alt=''>
+                        <p><?php echo $reception ?></p>
+                      </li>
+                      <li>
+                        <img src='<?php echo get_template_directory_uri(); ?>/assets/img/icons/parking.svg' alt=''>
+                        <p><?php echo $parking ?></p>
+                      </li>
+                      <li>
+                        <img src='<?php echo get_template_directory_uri(); ?>/assets/img/icons/restaurant.svg' alt=''>
+                        <p><?php echo $restaurant ?></p>
+                      </li>
+                      <li>
+                        <img src='<?php echo get_template_directory_uri(); ?>/assets/img/icons/gym.svg' alt=''>
+                        <p><?php echo $gym ?></p>
+                      </li>
+                      <li>
+                        <img src='<?php echo get_template_directory_uri(); ?>/assets/img/icons/pool.svg' alt=''>
+                        <p><?php echo $pool ?></p>
+                      </li>
+                    <?php endwhile; ?>
+                  </ul>
+                <?php endif; ?>
+                <!--                --><?php
+                  //                  wp_nav_menu([
+                  //                    'theme_location' => 'welcome-facilities',
+                  //                    'container' => null,
+                  //                    'item_wrap' => '<ul>%3$s</ul>',
+                  //                  ]);
+                  //                ?>
                 <!--                <ul class='items'>-->
                 <!--                  <li>-->
                 <!--                    <img src='./assets/img/icons/wifi.svg' alt=''>-->
@@ -233,13 +292,13 @@
               <?php echo get_field('events_description') ?>
             </p>
             <img class='img' src='<?php echo get_template_directory_uri(); ?>/assets/img/home-events.png' alt=''>
-            <?php
-              wp_nav_menu([
-                'theme_location' => 'events',
-                'container' => null,
-                'item_wrap' => '<ul>%3$s</ul>',
-              ]);
-            ?>
+            <!--            --><?php
+              //              wp_nav_menu([
+              //                'theme_location' => 'events',
+              //                'container' => null,
+              //                'item_wrap' => '<ul>%3$s</ul>',
+              //              ]);
+              //            ?>
           </div>
         </div>
       </div>
@@ -346,14 +405,7 @@
     <!--        </div>-->
     <!--      </div>-->
     <!--    </section>-->
-    <section class='subscription'>
-      <img class='back' src='<?php echo get_template_directory_uri(); ?>/assets/img/subscription-back.jpg' alt='' />
-      <div class='content'>
-        <h2><?php echo get_field('subscription_title') ?></h2>
-        <p><?php the_field('subscription_subtitle') ?></p>
-        <?= do_shortcode('[contact-form-7 id="63" title="Untitled"]'); ?>
-      </div>
-    </section>
+    <?php include 'subscription.php'; ?>
     <?php include 'info.php'; ?>
   </main>
 

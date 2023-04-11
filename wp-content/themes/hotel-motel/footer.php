@@ -6,6 +6,7 @@
       </a>
       <ul>
         <li><?php echo get_field('footer_title_list_1') ?></li>
+
         <?php
           wp_nav_menu([
             'theme_location' => 'footer-find',
