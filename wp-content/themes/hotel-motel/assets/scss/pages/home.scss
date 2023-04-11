@@ -344,14 +344,14 @@
       h2 {
         margin-bottom: 24px;
       }
-      p {
+      .description {
         margin-bottom: 60px;
       }
       .img {
         max-height: 420px;
         display:    none;
       }
-      a {
+      li {
         max-width:       438px;
         width:           100%;
         display:         flex;
@@ -361,7 +361,7 @@
         border-radius:   100px;
         padding-right:   20px;
         margin-bottom:   8px;
-        span {
+        p {
           padding:     16px 24px;
           font-weight: 350;
           transition:  .3s linear;

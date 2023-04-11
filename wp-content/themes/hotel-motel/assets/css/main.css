@@ -1209,14 +1209,14 @@ a .div-link img, .item .div-link img {
 .home .events .content h2 {
   margin-bottom: 24px;
 }
-.home .events .content p {
+.home .events .content .description {
   margin-bottom: 60px;
 }
 .home .events .content .img {
   max-height: 420px;
   display: none;
 }
-.home .events .content a {
+.home .events .content li {
   max-width: 438px;
   width: 100%;
   display: flex;
@@ -1227,12 +1227,12 @@ a .div-link img, .item .div-link img {
   padding-right: 20px;
   margin-bottom: 8px;
 }
-.home .events .content a span {
+.home .events .content li p {
   padding: 16px 24px;
   font-weight: 350;
   transition: 0.3s linear;
 }
-.home .events .content a img {
+.home .events .content li img {
   opacity: 0;
 }
 .home .events .content a:hover {

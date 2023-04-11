@@ -62,27 +62,6 @@
                 <?php endwhile; ?>
               </ul>
             <?php endif; ?>
-            <!--            --><?php
-              //              wp_nav_menu([
-              //                'theme_location' => 'welcome-find-us',
-              //                'container' => null,
-              //                'item_wrap' => '<ul>%3$s</ul>',
-              //              ]);
-              //            ?>
-            <!--            <ul>-->
-            <!--              <li>-->
-            <!--                <img src='./assets/img/icons/phone.svg' alt=''>-->
-            <!--                <a href='tel:+61 8 8368 9900'>+61 8 8368 9900</a>-->
-            <!--              </li>-->
-            <!--              <li>-->
-            <!--                <img src='./assets/img/icons/mail.svg' alt=''>-->
-            <!--                <a href='mailto:myemail@gmail.com'>Email</a>-->
-            <!--              </li>-->
-            <!--              <li>-->
-            <!--                <img src='./assets/img/icons/loc.svg' alt=''>-->
-            <!--                <a href='#'>Parking & Directions</a>-->
-            <!--              </li>-->
-            <!--            </ul>-->
           </div>
           <div class='facilities'>
             <div class='content'>
@@ -125,39 +104,6 @@
                     <?php endwhile; ?>
                   </ul>
                 <?php endif; ?>
-                <!--                --><?php
-                  //                  wp_nav_menu([
-                  //                    'theme_location' => 'welcome-facilities',
-                  //                    'container' => null,
-                  //                    'item_wrap' => '<ul>%3$s</ul>',
-                  //                  ]);
-                  //                ?>
-                <!--                <ul class='items'>-->
-                <!--                  <li>-->
-                <!--                    <img src='./assets/img/icons/wifi.svg' alt=''>-->
-                <!--                    <p>Free Wi-Fi</p>-->
-                <!--                  </li>-->
-                <!--                  <li>-->
-                <!--                    <img src='./assets/img/icons/reception.svg' alt=''>-->
-                <!--                    <p>24hr Reception</p>-->
-                <!--                  </li>-->
-                <!--                  <li>-->
-                <!--                    <img src='./assets/img/icons/parking.svg' alt=''>-->
-                <!--                    <p>Parking</p>-->
-                <!--                  </li>-->
-                <!--                  <li>-->
-                <!--                    <img src='./assets/img/icons/restaurant.svg' alt=''>-->
-                <!--                    <p>Restaurant</p>-->
-                <!--                  </li>-->
-                <!--                  <li>-->
-                <!--                    <img src='./assets/img/icons/gym.svg' alt=''>-->
-                <!--                    <p>Gym</p>-->
-                <!--                  </li>-->
-                <!--                  <li>-->
-                <!--                    <img src='./assets/img/icons/pool.svg' alt=''>-->
-                <!--                    <p>Pool</p>-->
-                <!--                  </li>-->
-                <!--                </ul>-->
               </div>
               <a href='#'>See more</a>
             </div>
@@ -288,17 +234,35 @@
         <div class='block-content'>
           <div class='content'>
             <h2><?php echo get_field('events_title') ?></h2>
-            <p>
+            <p class='description'>
               <?php echo get_field('events_description') ?>
             </p>
             <img class='img' src='<?php echo get_template_directory_uri(); ?>/assets/img/home-events.png' alt=''>
-            <!--            --><?php
-              //              wp_nav_menu([
-              //                'theme_location' => 'events',
-              //                'container' => null,
-              //                'item_wrap' => '<ul>%3$s</ul>',
-              //              ]);
-              //            ?>
+            <?php if (have_rows('list_events')): ?>
+              <ul class="slides">
+                <?php while (have_rows('list_events')): the_row();
+                  $private_dining = get_sub_field('private_dining');
+                  $private_dining_2 = get_sub_field('private_dining_2');
+                  $weddings = get_sub_field('weddings');
+                  ?>
+                  <li>
+                    <p><?php echo $private_dining ?></p>
+                    <img src='<?php echo get_template_directory_uri(); ?>/assets/img/icons/right-arrow-white.svg'
+                         alt=''>
+                  </li>
+                  <li>
+                    <p><?php echo $private_dining_2 ?></p>
+                    <img src='<?php echo get_template_directory_uri(); ?>/assets/img/icons/right-arrow-white.svg'
+                         alt=''>
+                  </li>
+                  <li>
+                    <p><?php echo $weddings ?></p>
+                    <img src='<?php echo get_template_directory_uri(); ?>/assets/img/icons/right-arrow-white.svg'
+                         alt=''>
+                  </li>
+                <?php endwhile; ?>
+              </ul>
+            <?php endif; ?>
           </div>
         </div>
       </div>
