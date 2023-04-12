@@ -116,125 +116,125 @@
         </div>
       </div>
     </section>
-    <!--    <section class='rooms'>-->
-    <!--      <div class='container'>-->
-    <!--        <h2>Our Rooms at HotelMOTEL</h2>-->
-    <!--      </div>-->
-    <!--      <div class='swiper swiper-rooms'>-->
-    <!--        <div class='swiper-wrapper'>-->
-    <!--          <div class='swiper-slide'>-->
-    <!--            <img class='img-room' src='./assets/img/accessible-rooms-1.jpg' alt=''>-->
-    <!--            <div class='link'>-->
-    <!--              <a href='#'>-->
-    <!--                <h3>Double Double Room</h3>-->
-    <!--                <img class='img-right-arrow' src='./assets/img/icons/right-arrow-white.svg' alt=''>-->
-    <!--              </a>-->
-    <!--              <p>A quintessential experience, with easy-going vibes. The HM Double Double Room offers two double beds,-->
-    <!--                with-->
-    <!--                a coffee pod machine...</p>-->
-    <!--            </div>-->
-    <!--          </div>-->
-    <!--          <div class='swiper-slide'>-->
-    <!--            <img class='img-room' src='./assets/img/home-events.png' alt=''>-->
-    <!--            <div class='link'>-->
-    <!--              <a href='#'>-->
-    <!--                <h3>Double Double Room</h3>-->
-    <!--                <img class='img-right-arrow' src='./assets/img/icons/right-arrow-white.svg' alt=''>-->
-    <!--              </a>-->
-    <!--              <p>A quintessential experience, with easy-going vibes. The HM Double Double Room offers two double beds,-->
-    <!--                with-->
-    <!--                a coffee pod machine...</p>-->
-    <!--            </div>-->
-    <!--          </div>-->
-    <!--          <div class='swiper-slide'>-->
-    <!--            <img class='img-room' src='./assets/img/accessible-rooms-1.jpg' alt=''>-->
-    <!--            <div class='link'>-->
-    <!--              <a href='#'>-->
-    <!--                <h3>Double Double Room</h3>-->
-    <!--                <img class='img-right-arrow' src='./assets/img/icons/right-arrow-white.svg' alt=''>-->
-    <!--              </a>-->
-    <!--              <p>A quintessential experience, with easy-going vibes. The HM Double Double Room offers two double beds,-->
-    <!--                with-->
-    <!--                a coffee pod machine...</p>-->
-    <!--            </div>-->
-    <!--          </div>-->
-    <!--          <div class='swiper-slide'>-->
-    <!--            <img class='img-room' src='./assets/img/accessible-rooms-1.jpg' alt=''>-->
-    <!--            <div class='link'>-->
-    <!--              <a href='#'>-->
-    <!--                <h3>Double Double Room</h3>-->
-    <!--                <img class='img-right-arrow' src='./assets/img/icons/right-arrow-white.svg' alt=''>-->
-    <!--              </a>-->
-    <!--              <p>A quintessential experience, with easy-going vibes. The HM Double Double Room offers two double beds,-->
-    <!--                with-->
-    <!--                a coffee pod machine...</p>-->
-    <!--            </div>-->
-    <!--          </div>-->
-    <!--        </div>-->
-    <!--        <div class="swiper-pagination"></div>-->
-    <!--        <div class="swiper-btn swiper-button-prev"></div>-->
-    <!--        <div class="swiper-btn swiper-button-next"></div>-->
-    <!--      </div>-->
-    <!--    </section>-->
-    <!--    <section class='restaurants-and-bars'>-->
-    <!--      <div class='swiper swiper-restaurants'>-->
-    <!--        <div class='container'>-->
-    <!--          <h2>Restaurants & Bars</h2>-->
-    <!--        </div>-->
-    <!--        <div class='swiper-wrapper'>-->
-    <!--          <div class='swiper-slide'>-->
-    <!--            <img src='./assets/img/home-restaurants-1.png' alt=''>-->
-    <!--            <div>-->
-    <!--              <h3>HotelMOTEL In-Room Dining</h3>-->
-    <!--              <p>Enter room, check menu. It’s that simple to sate your appetite, with a fantastic selection of-->
-    <!--                deliciousness...</p>-->
-    <!--            </div>-->
-    <!--          </div>-->
-    <!--          <div class='swiper-slide'>-->
-    <!--            <img src='./assets/img/apartments-1.png' alt=''>-->
-    <!--            <div>-->
-    <!--              <h3>HotelMOTEL In-Room Dining</h3>-->
-    <!--              <p>Enter room, check menu. It’s that simple to sate your appetite, with a fantastic selection of-->
-    <!--                deliciousness...</p>-->
-    <!--            </div>-->
-    <!--          </div>-->
-    <!--          <div class='swiper-slide'>-->
-    <!--            <img src='./assets/img/home-events.png' alt=''>-->
-    <!--            <div>-->
-    <!--              <h3>Terrace Bar & Kitchen Breakfast</h3>-->
-    <!--              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam corporis, dolorem ea-->
-    <!--                explicabo facilis fugiat laboriosam modi omnis veritatis!</p>-->
-    <!--            </div>-->
-    <!--          </div>-->
-    <!--          <div class='swiper-slide'>-->
-    <!--            <img src='./assets/img/home-restaurants-1.png' alt=''>-->
-    <!--            <div>-->
-    <!--              <h3>HotelMOTEL In-Room Dining</h3>-->
-    <!--              <p>Enter room, check menu. It’s that simple to sate your appetite, with a fantastic selection of-->
-    <!--                deliciousness...</p>-->
-    <!--            </div>-->
-    <!--          </div>-->
-    <!--          <div class='swiper-slide'>-->
-    <!--            <img src='./assets/img/home-restaurants-2.png' alt=''>-->
-    <!--            <div>-->
-    <!--              <h3>Terrace Bar & Kitchen Breakfast</h3>-->
-    <!--              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam corporis, dolorem ea-->
-    <!--                explicabo facilis fugiat laboriosam modi omnis veritatis!</p>-->
-    <!--            </div>-->
-    <!--          </div>-->
-    <!--        </div>-->
-    <!--        <div class="swiper-btn swiper-button-prev"></div>-->
-    <!--        <div class="swiper-btn swiper-button-next"></div>-->
-    <!--        <div class='swiper-scrollbar'></div>-->
-    <!--      </div>-->
-    <!--    </section>-->
+        <section class='rooms'>
+          <div class='container'>
+            <h2>Our Rooms at HotelMOTEL</h2>
+          </div>
+          <div class='swiper swiper-rooms'>
+            <div class='swiper-wrapper'>
+              <div class='swiper-slide'>
+                <img class='img-room' src='./assets/img/accessible-rooms-1.jpg' alt=''>
+                <div class='link'>
+                  <a href='#'>
+                    <h3>Double Double Room</h3>
+                    <img class='img-right-arrow' src='./assets/img/icons/right-arrow-white.svg' alt=''>
+                  </a>
+                  <p>A quintessential experience, with easy-going vibes. The HM Double Double Room offers two double beds,
+                    with
+                    a coffee pod machine...</p>
+                </div>
+              </div>
+              <div class='swiper-slide'>
+                <img class='img-room' src='./assets/img/home-events.png' alt=''>
+                <div class='link'>
+                  <a href='#'>
+                    <h3>Double Double Room</h3>
+                    <img class='img-right-arrow' src='./assets/img/icons/right-arrow-white.svg' alt=''>
+                  </a>
+                  <p>A quintessential experience, with easy-going vibes. The HM Double Double Room offers two double beds,
+                    with
+                    a coffee pod machine...</p>
+                </div>
+              </div>
+              <div class='swiper-slide'>
+                <img class='img-room' src='./assets/img/accessible-rooms-1.jpg' alt=''>
+                <div class='link'>
+                  <a href='#'>
+                    <h3>Double Double Room</h3>
+                    <img class='img-right-arrow' src='./assets/img/icons/right-arrow-white.svg' alt=''>
+                  </a>
+                  <p>A quintessential experience, with easy-going vibes. The HM Double Double Room offers two double beds,
+                    with
+                    a coffee pod machine...</p>
+                </div>
+              </div>
+              <div class='swiper-slide'>
+                <img class='img-room' src='./assets/img/accessible-rooms-1.jpg' alt=''>
+                <div class='link'>
+                  <a href='#'>
+                    <h3>Double Double Room</h3>
+                    <img class='img-right-arrow' src='./assets/img/icons/right-arrow-white.svg' alt=''>
+                  </a>
+                  <p>A quintessential experience, with easy-going vibes. The HM Double Double Room offers two double beds,
+                    with
+                    a coffee pod machine...</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-btn swiper-button-prev"></div>
+            <div class="swiper-btn swiper-button-next"></div>
+          </div>
+        </section>
+        <section class='restaurants-and-bars'>
+          <div class='swiper swiper-restaurants'>
+            <div class='container'>
+              <h2>Restaurants & Bars</h2>
+            </div>
+            <div class='swiper-wrapper'>
+              <div class='swiper-slide'>
+                <img src='./assets/img/home-restaurants-1.png' alt=''>
+                <div>
+                  <h3>HotelMOTEL In-Room Dining</h3>
+                  <p>Enter room, check menu. It’s that simple to sate your appetite, with a fantastic selection of
+                    deliciousness...</p>
+                </div>
+              </div>
+              <div class='swiper-slide'>
+                <img src='./assets/img/apartments-1.png' alt=''>
+                <div>
+                  <h3>HotelMOTEL In-Room Dining</h3>
+                  <p>Enter room, check menu. It’s that simple to sate your appetite, with a fantastic selection of
+                    deliciousness...</p>
+                </div>
+              </div>
+              <div class='swiper-slide'>
+                <img src='./assets/img/home-events.png' alt=''>
+                <div>
+                  <h3>Terrace Bar & Kitchen Breakfast</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam corporis, dolorem ea
+                    explicabo facilis fugiat laboriosam modi omnis veritatis!</p>
+                </div>
+              </div>
+              <div class='swiper-slide'>
+                <img src='./assets/img/home-restaurants-1.png' alt=''>
+                <div>
+                  <h3>HotelMOTEL In-Room Dining</h3>
+                  <p>Enter room, check menu. It’s that simple to sate your appetite, with a fantastic selection of
+                    deliciousness...</p>
+                </div>
+              </div>
+              <div class='swiper-slide'>
+                <img src='./assets/img/home-restaurants-2.png' alt=''>
+                <div>
+                  <h3>Terrace Bar & Kitchen Breakfast</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam corporis, dolorem ea
+                    explicabo facilis fugiat laboriosam modi omnis veritatis!</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-btn swiper-button-prev"></div>
+            <div class="swiper-btn swiper-button-next"></div>
+            <div class='swiper-scrollbar'></div>
+          </div>
+        </section>
     <section class='events'>
       <div class='container'>
         <img class='back' src='<?php echo get_template_directory_uri(); ?>/assets/img/home-events.png' alt=''>
         <div class='block-content'>
           <div class='content'>
             <h2><?php echo get_field('events_title') ?></h2>
-            <p class='description'>
+            <p class='description'>`
               <?php echo get_field('events_description') ?>
             </p>
             <img class='img' src='<?php echo get_template_directory_uri(); ?>/assets/img/home-events.png' alt=''>
@@ -267,108 +267,110 @@
         </div>
       </div>
     </section>
-    <!--    <section class='model-1-swiper'>-->
-    <!--      <div class='container'>-->
-    <!--        <h2>Offers & Promotions</h2>-->
-    <!--        <div class='swiper swiper-model-1'>-->
-    <!--          <div class='swiper-wrapper'>-->
-    <!--            <div class='swiper-slide'>-->
-    <!--              <img class='back' src='./assets/img/home-events.png' alt=''>-->
-    <!--              <div class='content'>-->
-    <!--                <div class='swiper-pagination'></div>-->
-    <!--                <h3>Come Alive. Travel Longer</h3>-->
-    <!--                <p>What makes you come alive? Here’s your chance to find out, with up to 15% off long stays across-->
-    <!--                  Australia with the Independent Collection by EVENT.</p>-->
-    <!--                <a class='btn'>-->
-    <!--                  <span>FROM $125</span>-->
-    <!--                  <img src='./assets/img/icons/right-arrow-white.svg' alt=''>-->
-    <!--                </a>-->
-    <!--              </div>-->
-    <!--            </div>-->
-    <!--            <div class='swiper-slide'>-->
-    <!--              <img class='back' src='./assets/img/home-offers-1.jpg' alt=''>-->
-    <!--              <div class='content'>-->
-    <!--                <div class='swiper-pagination'></div>-->
-    <!--                <h3>Come Alive. Travel Longer</h3>-->
-    <!--                <p>What makes you come alive? Here’s your chance to find out, with up to 15% off long stays across-->
-    <!--                  Australia with the Independent Collection by EVENT.</p>-->
-    <!--                <a class='btn'><span>FROM $125</span><img src='./assets/img/icons/right-arrow-white.svg' alt=''>-->
-    <!--                </a>-->
-    <!--              </div>-->
-    <!--            </div>-->
-    <!--            <div class='swiper-slide'>-->
-    <!--              <img class='back' src='./assets/img/home-offers-1.jpg' alt=''>-->
-    <!--              <div class='content'>-->
-    <!--                <div class='swiper-pagination'></div>-->
-    <!--                <h3>Come Alive. Travel Longer</h3>-->
-    <!--                <p>What makes you come alive? Here’s your chance to find out, with up to 15% off long stays across-->
-    <!--                  Australia with the Independent Collection by EVENT.</p>-->
-    <!--                <a class='btn'><span>FROM $125</span><img src='./assets/img/icons/right-arrow-white.svg' alt=''>-->
-    <!--                </a>-->
-    <!--              </div>-->
-    <!--            </div>-->
-    <!--          </div>-->
-    <!--          <div class="swiper-btn swiper-button-prev"></div>-->
-    <!--          <div class="swiper-btn swiper-button-next"></div>-->
-    <!--        </div>-->
-    <!--      </div>-->
-    <!--    </section>-->
-    <!--    <section class='comments'>-->
-    <!--      <div class='container'>-->
-    <!--        <div class='swiper swiper-comments'>-->
-    <!--          <div class='swiper-wrapper'>-->
-    <!--            <div class='swiper-slide'>-->
-    <!--              <p>“Grand views, parkland location and easy access to downtown make this a great place to stay.“</p>-->
-    <!--              <p>– The Weekend Australian</p>-->
-    <!--            </div>-->
-    <!--            <div class='swiper-slide'>-->
-    <!--              <p>“Grand views, parkland location and easy access to downtown make this a great place to stay.“</p>-->
-    <!--              <p>– The Weekend Australian</p>-->
-    <!--            </div>-->
-    <!--            <div class='swiper-slide'>-->
-    <!--              <p>“Grand views, parkland location and easy access to downtown make this a great place to stay.“</p>-->
-    <!--              <p>– The Weekend Australian</p>-->
-    <!--            </div>-->
-    <!--          </div>-->
-    <!--          <div class='swiper-scrollbar'></div>-->
-    <!--        </div>-->
-    <!--      </div>-->
-    <!--    </section>-->
-    <!--    <section class='socials'>-->
-    <!--      <h2>Our Socials</h2>-->
-    <!--      <div class='icons'>-->
-    <!--        <a href='#'><img class='facebook' src='./assets/img/icons/facebook.svg' alt=''></a>-->
-    <!--        <a href='#'><img class='instagram' src='./assets/img/icons/instagram.svg' alt=''></a>-->
-    <!--      </div>-->
-    <!--      <div class='swiper swiper-socials'>-->
-    <!--        <div class='swiper-wrapper'>-->
-    <!--          <div class='swiper-slide'>-->
-    <!--            <img src='./assets/img/home-events.png' alt=''>-->
-    <!--          </div>-->
-    <!--          <div class='swiper-slide'>-->
-    <!--            <img src='./assets/img/apartments-1.png' alt=''>-->
-    <!--          </div>-->
-    <!--          <div class='swiper-slide'>-->
-    <!--            <img src='./assets/img/socials-1.png' alt=''>-->
-    <!--          </div>-->
-    <!--          <div class='swiper-slide'>-->
-    <!--            <img src='./assets/img/socials-2.png' alt=''>-->
-    <!--          </div>-->
-    <!--          <div class='swiper-slide'>-->
-    <!--            <img src='./assets/img/socials-3.png' alt=''>-->
-    <!--          </div>-->
-    <!--          <div class='swiper-slide'>-->
-    <!--            <img src='./assets/img/socials-4.png' alt=''>-->
-    <!--          </div>-->
-    <!--          <div class='swiper-slide'>-->
-    <!--            <img src='./assets/img/socials-5.png' alt=''>-->
-    <!--          </div>-->
-    <!--          <div class='swiper-slide'>-->
-    <!--            <img src='./assets/img/socials-6.png' alt=''>-->
-    <!--          </div>-->
-    <!--        </div>-->
-    <!--      </div>-->
-    <!--    </section>-->
+        <section class='model-1-swiper'>
+          <div class='container'>
+            <h2>Offers & Promotions</h2>
+            <div class='swiper swiper-model-1'>
+              <div class='swiper-wrapper'>
+                <div class='swiper-slide'>
+                  <img class='back' src='./assets/img/home-events.png' alt=''>
+                  <div class='content'>
+                    <div class='swiper-pagination'></div>
+                    <h3>Come Alive. Travel Longer</h3>
+                    <p>What makes you come alive? Here’s your chance to find out, with up to 15% off long stays across
+                      Australia with the Independent Collection by EVENT.</p>
+                    <a class='btn'>
+                      <span>FROM $125</span>
+                      <img src='./assets/img/icons/right-arrow-white.svg' alt=''>
+                    </a>
+                  </div>
+                </div>
+                <div class='swiper-slide'>
+                  <img class='back' src='./assets/img/home-offers-1.jpg' alt=''>
+                  <div class='content'>
+                    <div class='swiper-pagination'></div>
+                    <h3>Come Alive. Travel Longer</h3>
+                    <p>What makes you come alive? Here’s your chance to find out, with up to 15% off long stays across
+                      Australia with the Independent Collection by EVENT.</p>
+                    <a class='btn'><span>FROM $125</span><img src='./assets/img/icons/right-arrow-white.svg' alt=''>
+                    </a>
+                  </div>
+                </div>
+                <div class='swiper-slide'>
+                  <img class='back' src='./assets/img/home-offers-1.jpg' alt=''>
+                  <div class='content'>
+                    <div class='swiper-pagination'></div>
+                    <h3>Come Alive. Travel Longer</h3>
+                    <p>What makes you come alive? Here’s your chance to find out, with up to 15% off long stays across
+                      Australia with the Independent Collection by EVENT.</p>
+                    <a class='btn'><span>FROM $125</span><img src='./assets/img/icons/right-arrow-white.svg' alt=''>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-btn swiper-button-prev"></div>
+              <div class="swiper-btn swiper-button-next"></div>
+            </div>
+          </div>
+        </section>
+        <section class='comments'>
+          <div class='container'>
+            <div class='swiper swiper-comments'>
+              <div class='swiper-wrapper'>
+                <div class='swiper-slide'>
+                  <p>“Grand views, parkland location and easy access to downtown make this a great place to stay.“</p>
+                  <p>– The Weekend Australian</p>
+                </div>
+                <div class='swiper-slide'>
+                  <p>“Grand views, parkland location and easy access to downtown make this a great place to stay.“</p>
+                  <p>– The Weekend Australian</p>
+                </div>
+                <div class='swiper-slide'>
+                  <p>“Grand views, parkland location and easy access to downtown make this a great place to stay.“</p>
+                  <p>– The Weekend Australian</p>
+                </div>
+              </div>
+              <div class='swiper-scrollbar'></div>
+            </div>
+          </div>
+        </section>
+    <section class='socials'>
+      <h2>Our Socials</h2>
+      <div class='icons'>
+        <a href='#'><img class='facebook'
+                         src='<?php echo get_template_directory_uri(); ?>/assets/img/icons/facebook.svg' alt=''></a>
+        <a href='#'><img class='instagram'
+                         src='<?php echo get_template_directory_uri(); ?>/assets/img/icons/instagram.svg' alt=''></a>
+      </div>
+      <div class='swiper swiper-socials'>
+        <div class='swiper-wrapper'>
+          <div class='swiper-slide'>
+            <img src='<?php echo get_template_directory_uri(); ?>/assets/img/home-events.png' alt=''>
+          </div>
+          <div class='swiper-slide'>
+            <img src='<?php echo get_template_directory_uri(); ?>/assets/img/apartments-1.png' alt=''>
+          </div>
+          <div class='swiper-slide'>
+            <img src='<?php echo get_template_directory_uri(); ?>/assets/img/socials-1.png' alt=''>
+          </div>
+          <div class='swiper-slide'>
+            <img src='<?php echo get_template_directory_uri(); ?>/assets/img/socials-2.png' alt=''>
+          </div>
+          <div class='swiper-slide'>
+            <img src='<?php echo get_template_directory_uri(); ?>/assets/img/socials-3.png' alt=''>
+          </div>
+          <div class='swiper-slide'>
+            <img src='<?php echo get_template_directory_uri(); ?>/assets/img/socials-4.png' alt=''>
+          </div>
+          <div class='swiper-slide'>
+            <img src='<?php echo get_template_directory_uri(); ?>/assets/img/socials-5.png' alt=''>
+          </div>
+          <div class='swiper-slide'>
+            <img src='<?php echo get_template_directory_uri(); ?>/assets/img/socials-6.png' alt=''>
+          </div>
+        </div>
+      </div>
+    </section>
     <?php include 'subscription.php'; ?>
     <?php include 'info.php'; ?>
   </main>

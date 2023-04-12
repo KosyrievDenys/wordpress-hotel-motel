@@ -6,8 +6,10 @@
   //  add_shortcode('')
   function add_scripts_and_styles() {
     wp_enqueue_style('main-css', get_template_directory_uri() . '/assets/css/main.css');
+    wp_enqueue_style('swiper-css', get_template_directory_uri() . '/assets/libs/swiper/swiper.css');
     wp_enqueue_script('main-js', get_template_directory_uri() . '/assets/js/main.js');
     wp_enqueue_script('home', get_template_directory_uri() . '/assets/js/home.js');
+    wp_enqueue_script('swiper', get_template_directory_uri() . '/assets/libs/swiper/swiper.js');
   }
 
   function add_menus() {

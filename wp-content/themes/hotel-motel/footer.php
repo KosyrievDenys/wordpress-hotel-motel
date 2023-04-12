@@ -53,6 +53,5 @@
     </div>
   </div>
 </footer>
-<!--<script src="./assets/libs/swiper/swiper.js"></script>-->
 </body>
 </html>
