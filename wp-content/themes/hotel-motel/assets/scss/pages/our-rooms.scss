@@ -1,0 +1,141 @@
+.our-rooms {
+  .rooms {
+    padding: 69px 0 0;
+    .selected-items {
+      display:         flex;
+      justify-content: space-between;
+      flex-wrap:       wrap;
+    }
+    .selected {
+      svg {
+        height: 8px;
+      }
+      &-active {
+        svg {
+          transform: rotate(180deg);
+        }
+      }
+    }
+    a {
+      width:          40%;
+      cursor:         pointer;
+      padding-bottom: 80px;
+      &.active {
+        display: none;
+      }
+      .image {
+        max-height:    384px;
+        height:        34vw;
+        overflow:      hidden;
+        border-radius: 24px;
+        margin-bottom: 24px;
+        position:      relative;
+        top:           0;
+        left:          0;
+        display:       flex;
+        align-items:   center;
+        .room {
+          height:     100%;
+          width:      100%;
+          object-fit: cover;
+          transition: .2s linear;
+        }
+      }
+      &:nth-of-type(4n),
+      &:nth-of-type(4n-3) {
+        width: 58%;
+        .image {
+          max-height: 493px;
+          height:     50vw;
+        }
+      }
+      p {
+        font-weight: 350;
+        opacity:     .7;
+        transition:  .1s linear;
+      }
+      &:hover {
+        .room {
+          scale: 1.1;
+        }
+        p {
+          opacity: 1;
+        }
+        .img-right-arrow {
+          opacity: 1;
+        }
+      }
+      span {
+        display:        block;
+        position:       absolute;
+        top:            10px;
+        left:           10px;
+        z-index:        1;
+        padding:        5px 15px;
+        font-size:      10px;
+        text-transform: uppercase;
+        color:          #fff;
+        border-radius:  24px;
+      }
+      .accessible-rooms-title {
+        background: #99604C;
+      }
+      .suites-title {
+        background: #37393B;
+      }
+      .apartments-title {
+        background: #687D8A;
+      }
+      .room {
+        height:     100%;
+        width:      100%;
+        object-fit: cover;
+      }
+      .room-title {
+        display:       flex;
+        align-items:   center;
+        margin-bottom: 24px;
+      }
+      h3 {
+        margin-right: 10px;
+      }
+      .img-right-arrow {
+        filter:     invert(1);
+        opacity:    0;
+        transition: .3s linear;
+      }
+    }
+  }
+}
+
+@media(max-width: 1024px) {
+  .our-rooms {
+    .rooms {
+      padding-top: 30px;
+      a {
+        padding-bottom: 40px;
+      }
+    }
+  }
+}
+
+@media(max-width: 768px) {
+  .our-rooms {
+    .rooms {
+      a {
+        width: 100%;
+        .image {
+          height:        54vw;
+          border-radius: 16px;
+        }
+        &:nth-of-type(4n),
+        &:nth-of-type(4n-3) {
+          width: 100%;
+          .image {
+            height: 60vw;
+          }
+        }
+      }
+    }
+  }
+}

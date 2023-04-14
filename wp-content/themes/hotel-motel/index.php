@@ -7,7 +7,7 @@
       </div>
       <div class='container'>
         <div class='wrapper'>
-          <h1><?php echo get_field('banner_title_home') ?></h1>
+          <h1><?php echo get_field('banner_home_title') ?></h1>
           <form>
             <label>
               <span>When</span>
@@ -15,9 +15,9 @@
             </label>
             <label>
               <span>Guests</span>
-              <?php if (have_rows('banner_select_guests')): ?>
+              <?php if (have_rows('banner_home_select')): ?>
                 <select class="slides">
-                  <?php while (have_rows('banner_select_guests')): the_row();
+                  <?php while (have_rows('banner_home_select')): the_row();
                     $select_guests = get_sub_field('select_guests');
                     var_dump($select_guests);
                     $select_guests_2 = get_sub_field('select_guests_2');
@@ -189,7 +189,15 @@
         </div>
         <div class='swiper-wrapper'>
           <div class='swiper-slide'>
-            <img src='./assets/img/home-restaurants-1.png' alt=''>
+            <img src='<?php echo get_template_directory_uri(); ?>/assets/img/home-restaurants-1.png' alt=''>
+            <div>
+              <h3><?php echo get_field('restaurant_and_bars_slide_1_title') ?></h3>
+              <p>Enter room, check menu. It’s that simple to sate your appetite, with a fantastic selection of
+                deliciousness...</p>
+            </div>
+          </div>
+          <div class='swiper-slide'>
+            <img src='<?php echo get_template_directory_uri(); ?>/assets/img/apartments-1.png' alt=''>
             <div>
               <h3>HotelMOTEL In-Room Dining</h3>
               <p>Enter room, check menu. It’s that simple to sate your appetite, with a fantastic selection of
@@ -197,15 +205,7 @@
             </div>
           </div>
           <div class='swiper-slide'>
-            <img src='./assets/img/apartments-1.png' alt=''>
-            <div>
-              <h3>HotelMOTEL In-Room Dining</h3>
-              <p>Enter room, check menu. It’s that simple to sate your appetite, with a fantastic selection of
-                deliciousness...</p>
-            </div>
-          </div>
-          <div class='swiper-slide'>
-            <img src='./assets/img/home-events.png' alt=''>
+            <img src='<?php echo get_template_directory_uri(); ?>/assets/img/home-events.png' alt=''>
             <div>
               <h3>Terrace Bar & Kitchen Breakfast</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam corporis, dolorem ea
@@ -213,7 +213,7 @@
             </div>
           </div>
           <div class='swiper-slide'>
-            <img src='./assets/img/home-restaurants-1.png' alt=''>
+            <img src='<?php echo get_template_directory_uri(); ?>/assets/img/home-restaurants-1.png' alt=''>
             <div>
               <h3>HotelMOTEL In-Room Dining</h3>
               <p>Enter room, check menu. It’s that simple to sate your appetite, with a fantastic selection of
@@ -221,7 +221,7 @@
             </div>
           </div>
           <div class='swiper-slide'>
-            <img src='./assets/img/home-restaurants-2.png' alt=''>
+            <img src='<?php echo get_template_directory_uri(); ?>/assets/img/home-restaurants-2.png' alt=''>
             <div>
               <h3>Terrace Bar & Kitchen Breakfast</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam corporis, dolorem ea
