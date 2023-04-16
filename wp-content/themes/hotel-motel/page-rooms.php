@@ -38,6 +38,72 @@
             </div>
           </div>
           <div class='selected-items'>
+            <!--            --><?php
+              //              $my_posts = get_posts(array(
+              //                'numberposts' => -1,
+              //                'category_name' => 'room',
+              //                'orderby' => 'date',
+              //                'order' => 'ASC',
+              //                'include' => array(),
+              //                'exclude' => array(),
+              //                'meta_key' => '',
+              //                'meta_value' => '',
+              //                'post_type' => 'post',
+              //                'suppress_filters' => true,
+              //              ));
+              //
+              //              global $post;
+              //
+              //              foreach ($my_posts as $post) {
+              //                setup_postdata($post);
+              //                ?>
+            <!---->
+            <!--                --><?php //if (have_rows('room')): ?>
+            <!--                  --><?php //while (have_rows('room')): the_row();
+              //                    $room_photo = get_sub_field('room_photo');
+              //                    $room_title = get_sub_field('room_title');
+              //                    $room_description = get_sub_field('room_description');
+              //                    $room_category = get_sub_field('room_category');
+              //                    ?>
+            <!--                    <a href='./rooms-detail.html' class='selected-item accessible-rooms'>-->
+            <!--                      <div class='image'>-->
+            <!--                        <span class='accessible-rooms-title'>-->
+            <?php //echo $room_category ?><!--</span>-->
+            <!--                        <img class='room' src='--><?php //echo $room_photo ?><!--' alt=''>-->
+            <!--                      </div>-->
+            <!--                      <div class='room-title'>-->
+            <!--                        <h3>--><?php //echo $room_title ?><!--</h3>-->
+            <!--                        <img class='img-right-arrow'-->
+            <!--                             src='-->
+            <?php //echo get_template_directory_uri(); ?><!--/assets/img/icons/right-arrow-white.svg'-->
+            <!--                             alt=''>-->
+            <!--                      </div>-->
+            <!--                      <p>--><?php //echo $room_description ?><!--</p>-->
+            <!--                    </a>-->
+            <!--                  --><?php //endwhile; ?>
+            <!--                --><?php //endif; ?>
+
+            <!--                            <a href='./rooms-detail.html' class='selected-item accessible-rooms'>-->
+            <!--                              <div class='image'>-->
+            <!--                                <span class='accessible-rooms-title'>Accessible Rooms</span>-->
+            <!--                                <img class='room' src='./assets/img/home-events.png' alt=''>-->
+            <!--                              </div>-->
+            <!--                              <div class='room-title'>-->
+            <!--                                <h3>Double Double Room</h3>-->
+            <!--                                <img class='img-right-arrow'-->
+            <!--                                     src='./assets/img/icons/right-arrow-white.svg'-->
+            <!--                                     alt=''>-->
+            <!--                              </div>-->
+            <!--                              <p>Enter room, check menu. It’s that simple to sate your appetite, with a fantastic selection of-->
+            <!--                                deliciousness-->
+            <!--                                waiting to be ordered through the...</p>-->
+            <!--                            </a>-->
+
+            <!--                            --><?php
+              //                            }
+              //                            wp_reset_postdata();
+              //                          ?>
+
             <?php
               $my_posts = get_posts(array(
                 'numberposts' => -1,
@@ -55,136 +121,16 @@
               global $post;
 
               foreach ($my_posts as $post) {
-                setup_postdata($post);
+                setup_postdata($post);''
                 ?>
-
-                <?php if (have_rows('room')): ?>
-                  <?php while (have_rows('room')): the_row();
-                    $room_photo = get_sub_field('room_photo');
-                    $room_title = get_sub_field('room_title');
-                    $room_description = get_sub_field('room_description');
-                    $room_category = get_sub_field('room_category');
-                    ?>
-                    <a href='./rooms-detail.html' class='selected-item accessible-rooms'>
-                      <div class='image'>
-                        <span class='accessible-rooms-title'><?php echo $room_category ?></span>
-                        <img class='room' src='<?php echo $room_photo ?>' alt=''>
-                      </div>
-                      <div class='room-title'>
-                        <h3><?php echo $room_title ?></h3>
-                        <img class='img-right-arrow'
-                             src='<?php echo get_template_directory_uri(); ?>/assets/img/icons/right-arrow-white.svg'
-                             alt=''>
-                      </div>
-                      <p><?php echo $room_description ?></p>
-                    </a>
-                  <?php endwhile; ?>
-                <?php endif; ?>
-
-                <!--                <a href='./rooms-detail.html' class='selected-item accessible-rooms'>-->
-                <!--                  <div class='image'>-->
-                <!--                    <span class='accessible-rooms-title'>Accessible Rooms</span>-->
-                <!--                    <img class='room' src='./assets/img/home-events.png' alt=''>-->
-                <!--                  </div>-->
-                <!--                  <div class='room-title'>-->
-                <!--                    <h3>Double Double Room</h3>-->
-                <!--                    <img class='img-right-arrow'-->
-                <!--                         src='./assets/img/icons/right-arrow-white.svg'-->
-                <!--                         alt=''>-->
-                <!--                  </div>-->
-                <!--                  <p>Enter room, check menu. It’s that simple to sate your appetite, with a fantastic selection of-->
-                <!--                    deliciousness-->
-                <!--                    waiting to be ordered through the...</p>-->
-                <!--                </a>-->
-
+                <a href='./rooms-detail.html' class='selected-item accessible-rooms'>
+                  <?php the_content(); ?>
+                </a>
                 <?php
               }
               wp_reset_postdata();
             ?>
-            <!--            <a href='rooms-detail.html' class='selected-item suites'>-->
-            <!--              <div class='image'>-->
-            <!--                <span class='suites-title'>Suites</span>-->
-            <!--                <img class='room' src='./assets/img/suites-1.png' alt=''>-->
-            <!--              </div>-->
-            <!--              <div class='room-title'><h3>Family Room</h3><img class='img-right-arrow'-->
-            <!--                                                               src='./assets/img/icons/right-arrow-white.svg'-->
-            <!--                                                               alt=''></div>-->
-            <!--              <p>Enter room, check menu. It’s that simple to sate your appetite, with a fantastic selection of-->
-            <!--                deliciousness-->
-            <!--                waiting to be ordered through the...</p>-->
-            <!--            </a>-->
-            <!--            <a href='./rooms-detail.html' class='selected-item apartments'>-->
-            <!--              <div class='image'>-->
-            <!--                <span class='apartments-title'>Apartments</span>-->
-            <!--                <img class='room' src='./assets/img/apartments-1.png' alt=''>-->
-            <!--              </div>-->
-            <!--              <div class='room-title'><h3>King Room</h3><img class='img-right-arrow'-->
-            <!--                                                             src='./assets/img/icons/right-arrow-white.svg'-->
-            <!--                                                             alt=''></div>-->
-            <!--              <p>Enter room, check menu. It’s that simple to sate your appetite, with a fantastic selection of-->
-            <!--                deliciousness-->
-            <!--                waiting to be ordered through the...</p>-->
-            <!--            </a>-->
-            <!--            <a href='./rooms-detail.html' class='selected-item accessible-rooms'>-->
-            <!--              <div class='image'>-->
-            <!--                <span class='accessible-rooms-title'>Accessible Rooms</span>-->
-            <!--                <img class='room' src='./assets/img/accessible-rooms-1.jpg' alt=''>-->
-            <!--              </div>-->
-            <!--              <div class='room-title'><h3>Double Double Room</h3><img class='img-right-arrow'-->
-            <!--                                                                      src='./assets/img/icons/right-arrow-white.svg'-->
-            <!--                                                                      alt=''></div>-->
-            <!--              <p>Enter room, check menu. It’s that simple to sate your appetite, with a fantastic selection of-->
-            <!--                deliciousness-->
-            <!--                waiting to be ordered through the...</p>-->
-            <!--            </a>-->
-            <!--            <a href='./rooms-detail.html' class='selected-item accessible-rooms'>-->
-            <!--              <div class='image'>-->
-            <!--                <span class='accessible-rooms-title'>Accessible Rooms</span>-->
-            <!--                <img class='room' src='./assets/img/home-events.png' alt=''>-->
-            <!--              </div>-->
-            <!--              <div class='room-title'><h3>Double Double Room</h3><img class='img-right-arrow'-->
-            <!--                                                                      src='./assets/img/icons/right-arrow-white.svg'-->
-            <!--                                                                      alt=''></div>-->
-            <!--              <p>Enter room, check menu. It’s that simple to sate your appetite, with a fantastic selection of-->
-            <!--                deliciousness-->
-            <!--                waiting to be ordered through the...</p>-->
-            <!--            </a>-->
-            <!--            <a href='./rooms-detail.html' class='selected-item suites'>-->
-            <!--              <div class='image'>-->
-            <!--                <span class='suites-title'>Suites</span>-->
-            <!--                <img class='room' src='./assets/img/suites-1.png' alt=''>-->
-            <!--              </div>-->
-            <!--              <div class='room-title'><h3>Family Room</h3><img class='img-right-arrow'-->
-            <!--                                                               src='./assets/img/icons/right-arrow-white.svg'-->
-            <!--                                                               alt=''></div>-->
-            <!--              <p>Enter room, check menu. It’s that simple to sate your appetite, with a fantastic selection of-->
-            <!--                deliciousness-->
-            <!--                waiting to be ordered through the...</p>-->
-            <!--            </a>-->
-            <!--            <a href='./rooms-detail.html' class='selected-item apartments'>-->
-            <!--              <div class='image'>-->
-            <!--                <span class='apartments-title'>Apartments</span>-->
-            <!--                <img class='room' src='./assets/img/apartments-1.png' alt=''>-->
-            <!--              </div>-->
-            <!--              <div class='room-title'><h3>King Room</h3><img class='img-right-arrow'-->
-            <!--                                                             src='./assets/img/icons/right-arrow-white.svg'-->
-            <!--                                                             alt=''></div>-->
-            <!--              <p>Enter room, check menu. It’s that simple to sate your appetite, with a fantastic selection of-->
-            <!--                deliciousness-->
-            <!--                waiting to be ordered through the...</p>-->
-            <!--            </a>-->
-            <!--            <a href='./rooms-detail.html' class='selected-item accessible-rooms'>-->
-            <!--              <div class='image'>-->
-            <!--                <span class='accessible-rooms-title'>Accessible Rooms</span>-->
-            <!--                <img class='room' src='./assets/img/accessible-rooms-1.jpg' alt=''>-->
-            <!--              </div>-->
-            <!--              <div class='room-title'><h3>Double Double Room</h3><img class='img-right-arrow'-->
-            <!--                                                                      src='./assets/img/icons/right-arrow-white.svg'-->
-            <!--                                                                      alt=''></div>-->
-            <!--              <p>Enter room, check menu. It’s that simple to sate your appetite, with a fantastic selection of-->
-            <!--                deliciousness-->
-            <!--                waiting to be ordered through the...</p>-->
-            <!--            </a>-->
+
           </div>
         </div>
       </div>
