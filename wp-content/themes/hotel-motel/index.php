@@ -206,41 +206,6 @@
               <?php endwhile; ?>
             </div>
           <?php endif; ?>
-          <!--            <div class='swiper-slide'>-->
-          <!--              <img class='back' src='./assets/img/home-events.png' alt=''>-->
-          <!--              <div class='content'>-->
-          <!--                <div class='swiper-pagination'></div>-->
-          <!--                <h3>Come Alive. Travel Longer</h3>-->
-          <!--                <p>What makes you come alive? Here’s your chance to find out, with up to 15% off long stays across-->
-          <!--                  Australia with the Independent Collection by EVENT.</p>-->
-          <!--                <a class='btn'>-->
-          <!--                  <span>FROM $125</span>-->
-          <!--                  <img src='./assets/img/icons/right-arrow-white.svg' alt=''>-->
-          <!--                </a>-->
-          <!--              </div>-->
-          <!--            </div>-->
-          <!--            <div class='swiper-slide'>-->
-          <!--              <img class='back' src='./assets/img/home-offers-1.jpg' alt=''>-->
-          <!--              <div class='content'>-->
-          <!--                <div class='swiper-pagination'></div>-->
-          <!--                <h3>Come Alive. Travel Longer</h3>-->
-          <!--                <p>What makes you come alive? Here’s your chance to find out, with up to 15% off long stays across-->
-          <!--                  Australia with the Independent Collection by EVENT.</p>-->
-          <!--                <a class='btn'><span>FROM $125</span><img src='./assets/img/icons/right-arrow-white.svg' alt=''>-->
-          <!--                </a>-->
-          <!--              </div>-->
-          <!--            </div>-->
-          <!--            <div class='swiper-slide'>-->
-          <!--              <img class='back' src='./assets/img/home-offers-1.jpg' alt=''>-->
-          <!--              <div class='content'>-->
-          <!--                <div class='swiper-pagination'></div>-->
-          <!--                <h3>Come Alive. Travel Longer</h3>-->
-          <!--                <p>What makes you come alive? Here’s your chance to find out, with up to 15% off long stays across-->
-          <!--                  Australia with the Independent Collection by EVENT.</p>-->
-          <!--                <a class='btn'><span>FROM $125</span><img src='./assets/img/icons/right-arrow-white.svg' alt=''>-->
-          <!--                </a>-->
-          <!--              </div>-->
-          <!--            </div>-->
           <div class="swiper-btn swiper-button-prev"></div>
           <div class="swiper-btn swiper-button-next"></div>
         </div>
@@ -249,20 +214,19 @@
     <section class='comments'>
       <div class='container'>
         <div class='swiper swiper-comments'>
-          <div class='swiper-wrapper'>
-            <div class='swiper-slide'>
-              <p>“Grand views, parkland location and easy access to downtown make this a great place to stay.“</p>
-              <p>– The Weekend Australian</p>
+          <?php if (have_rows('comments_sidebar')): ?>
+            <div class='swiper-wrapper'>
+              <?php while (have_rows('comments_sidebar')): the_row();
+                $comment = get_sub_field('comment');
+                $autor = get_sub_field('autor');
+                ?>
+                <div class='swiper-slide'>
+                  <p><?php echo $comment ?></p>
+                  <p><?php echo $autor ?></p>
+                </div>
+              <?php endwhile; ?>
             </div>
-            <div class='swiper-slide'>
-              <p>“Grand views, parkland location and easy access to downtown make this a great place to stay.“</p>
-              <p>– The Weekend Australian</p>
-            </div>
-            <div class='swiper-slide'>
-              <p>“Grand views, parkland location and easy access to downtown make this a great place to stay.“</p>
-              <p>– The Weekend Australian</p>
-            </div>
-          </div>
+          <?php endif; ?>
           <div class='swiper-scrollbar'></div>
         </div>
       </div>
