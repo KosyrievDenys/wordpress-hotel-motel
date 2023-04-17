@@ -3,7 +3,7 @@
   <main class='home'>
     <section class='banner'>
       <div class='back'>
-        <img src='<?php echo get_template_directory_uri(); ?>/assets/img/accessible-rooms-1.jpg' alt='' />
+        <img src='<?php echo get_field('banner_back') ?>' alt='' />
       </div>
       <div class='container'>
         <div class='wrapper'>
@@ -19,8 +19,6 @@
                 <select class="slides">
                   <?php while (have_rows('banner_home_select')): the_row();
                     $select_guests = get_sub_field('select_guests');
-                    var_dump($select_guests);
-                    $select_guests_2 = get_sub_field('select_guests_2');
                     ?>
                     <option>
                       <?php echo $select_guests ?>
