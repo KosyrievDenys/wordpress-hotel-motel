@@ -152,49 +152,63 @@
     <section class='restaurants-and-bars'>
       <div class='swiper swiper-restaurants'>
         <div class='container'>
-          <h2>Restaurants & Bars</h2>
+          <h2><?php echo get_field('restaurant_and_bars_title') ?></h2>
         </div>
         <div class='swiper-wrapper'>
-          <div class='swiper-slide'>
-            <img src='<?php echo get_template_directory_uri(); ?>/assets/img/home-restaurants-1.png' alt=''>
-            <div>
-              <h3><?php echo get_field('restaurant_and_bars_slide_1_title') ?></h3>
-              <p>Enter room, check menu. It’s that simple to sate your appetite, with a fantastic selection of
-                deliciousness...</p>
+          <?php if (have_rows('restaurants_and_bars_slider')): ?>
+            <div class='swiper-slide'>
+              <?php while (have_rows('restaurants_and_bars_slider')): the_row();
+                $photo = get_sub_field('restaurants_and_bars_photo');
+                $title = get_sub_field('restaurants_and_bars_title');
+                $description = get_sub_field('restaurants_and_bars_description');
+                ?>
+                <img src='<?php echo $photo ?>' alt=''>
+                <div>
+                  <h3><?php echo $title ?></h3>
+                  <p><?php echo $description ?></p>
+                </div>
+              <?php endwhile; ?>
             </div>
-          </div>
-          <div class='swiper-slide'>
-            <img src='<?php echo get_template_directory_uri(); ?>/assets/img/apartments-1.png' alt=''>
-            <div>
-              <h3>HotelMOTEL In-Room Dining</h3>
-              <p>Enter room, check menu. It’s that simple to sate your appetite, with a fantastic selection of
-                deliciousness...</p>
-            </div>
-          </div>
-          <div class='swiper-slide'>
-            <img src='<?php echo get_template_directory_uri(); ?>/assets/img/home-events.png' alt=''>
-            <div>
-              <h3>Terrace Bar & Kitchen Breakfast</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam corporis, dolorem ea
-                explicabo facilis fugiat laboriosam modi omnis veritatis!</p>
-            </div>
-          </div>
-          <div class='swiper-slide'>
-            <img src='<?php echo get_template_directory_uri(); ?>/assets/img/home-restaurants-1.png' alt=''>
-            <div>
-              <h3>HotelMOTEL In-Room Dining</h3>
-              <p>Enter room, check menu. It’s that simple to sate your appetite, with a fantastic selection of
-                deliciousness...</p>
-            </div>
-          </div>
-          <div class='swiper-slide'>
-            <img src='<?php echo get_template_directory_uri(); ?>/assets/img/home-restaurants-2.png' alt=''>
-            <div>
-              <h3>Terrace Bar & Kitchen Breakfast</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam corporis, dolorem ea
-                explicabo facilis fugiat laboriosam modi omnis veritatis!</p>
-            </div>
-          </div>
+          <?php endif; ?>
+          <!--          <div class='swiper-slide'>-->
+          <!--            <img src='' alt=''>-->
+          <!--            <div>-->
+          <!--              <h3>--><?php //echo get_field('restaurant_and_bars_slide_1_title') ?><!--</h3>-->
+          <!--              <p>--><?php //echo get_field('restaurant_and_bars_slide_1_description') ?><!--</p>-->
+          <!--            </div>-->
+          <!--          </div>-->
+          <!--          <div class='swiper-slide'>-->
+          <!--            <img src='-->
+          <?php //echo get_template_directory_uri(); ?><!--/assets/img/apartments-1.png' alt=''>-->
+          <!--            <div>-->
+          <!--              <h3>--><?php //echo get_field('restaurant_and_bars_slide_2_title') ?><!--</h3>-->
+          <!--              <p>--><?php //echo get_field('restaurant_and_bars_slide_2_description') ?><!--</p>-->
+          <!--            </div>-->
+          <!--          </div>-->
+          <!--          <div class='swiper-slide'>-->
+          <!--            <img src='-->
+          <?php //echo get_template_directory_uri(); ?><!--/assets/img/home-events.png' alt=''>-->
+          <!--            <div>-->
+          <!--              <h3>--><?php //echo get_field('restaurant_and_bars_slide_1_title') ?><!--</h3>-->
+          <!--              <p>--><?php //echo get_field('restaurant_and_bars_slide_1_description') ?><!--</p>-->
+          <!--            </div>-->
+          <!--          </div>-->
+          <!--          <div class='swiper-slide'>-->
+          <!--            <img src='-->
+          <?php //echo get_template_directory_uri(); ?><!--/assets/img/home-restaurants-1.png' alt=''>-->
+          <!--            <div>-->
+          <!--              <h3>--><?php //echo get_field('restaurant_and_bars_slide_2_title') ?><!--</h3>-->
+          <!--              <p>--><?php //echo get_field('restaurant_and_bars_slide_2_description') ?><!--</p>-->
+          <!--            </div>-->
+          <!--          </div>-->
+          <!--          <div class='swiper-slide'>-->
+          <!--            <img src='-->
+          <?php //echo get_template_directory_uri(); ?><!--/assets/img/home-restaurants-2.png' alt=''>-->
+          <!--            <div>-->
+          <!--              <h3>--><?php //echo get_field('restaurant_and_bars_slide_1_title') ?><!--</h3>-->
+          <!--              <p>--><?php //echo get_field('restaurant_and_bars_slide_1_description') ?><!--</p>-->
+          <!--            </div>-->
+          <!--          </div>-->
         </div>
         <div class="swiper-btn swiper-button-prev"></div>
         <div class="swiper-btn swiper-button-next"></div>
