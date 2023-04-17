@@ -1,0 +1,141 @@
+.model-1-swiper {
+  padding: 60px 0 90px;
+  h2 {
+    margin-bottom: 5px;
+  }
+  .swiper-slide {
+    max-width:       1440px;
+    display:         flex;
+    flex-direction:  column;
+    justify-content: center;
+    align-items:     flex-end;
+    .back {
+      height:        100%;
+      width:         85%;
+      border-radius: 16px;
+      position:      absolute;
+      top:           0;
+      left:          0;
+      z-index:       -1;
+      object-fit:    cover;
+    }
+    .content {
+      max-width:     523px;
+      background:    #CA4326;
+      border-radius: 24px;
+      padding:       5% 4%;
+      margin:        73px 0;
+      * {
+        color: #fff;
+      }
+    }
+    .swiper-pagination {
+      position:      static;
+      text-align:    left;
+      margin-bottom: 10px;
+    }
+    h3, p {
+      margin-bottom: 32px;
+    }
+    h3 {
+      max-width: 355px;
+      font-size: 32px;
+    }
+    .btn {
+      display:     flex;
+      align-items: center;
+      span {
+        margin-right: 12px;
+        position:     relative;
+        z-index:      11;
+        transition:   .3s linear;
+      }
+      &:hover {
+        opacity: .5;
+      }
+    }
+  }
+  .swiper-button-prev {
+    top:   96%;
+    right: 90px;
+    left:  auto;
+  }
+  .swiper-button-next {
+    top:   96%;
+    right: 30px;
+  }
+}
+
+@media(max-width: 1024px) {
+  .model-1-swiper {
+    padding: 43px 0 30px;
+    .swiper {
+      padding-bottom: 70px;
+    }
+    h2 {
+      font-size: 24px;
+    }
+    .swiper-slide {
+      justify-content: flex-end;
+      align-items:     center;
+      .back {
+        width:  100%;
+        height: 85%;
+      }
+      .content {
+        max-width: 600px;
+        width:     90%;
+        margin:    200px 0 0;
+      }
+      h3 {
+        font-size: 24px;
+      }
+    }
+    .swiper-button-prev {
+      bottom: 0;
+      right:  53%;
+    }
+    .swiper-button-next {
+      bottom: 0;
+      right:  43%;
+    }
+  }
+}
+
+@media(max-width: 768px) {
+  .model-1-swiper {
+    .container {
+      padding: 0 20px;
+    }
+    .back {
+      height:     417px;
+      object-fit: cover;
+    }
+    .swiper-slide {
+      .content {
+        width:   96%;
+        bottom:  -25%;
+        padding: 70px 40px 40px;
+      }
+      .swiper-pagination {
+        top: 12%;
+      }
+    }
+  }
+}
+
+@media(max-width: 567px) {
+  .model-1-swiper {
+    .swiper-slide {
+      .swiper-pagination {
+        left: -34%;
+      }
+    }
+    .swiper-button-prev {
+      right: 54%;
+    }
+    .swiper-button-next {
+      right: 37%;
+    }
+  }
+}

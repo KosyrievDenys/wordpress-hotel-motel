@@ -184,43 +184,63 @@
       <div class='container'>
         <h2>Offers & Promotions</h2>
         <div class='swiper swiper-model-1'>
-          <div class='swiper-wrapper'>
-            <div class='swiper-slide'>
-              <img class='back' src='./assets/img/home-events.png' alt=''>
-              <div class='content'>
-                <div class='swiper-pagination'></div>
-                <h3>Come Alive. Travel Longer</h3>
-                <p>What makes you come alive? Here’s your chance to find out, with up to 15% off long stays across
-                  Australia with the Independent Collection by EVENT.</p>
-                <a class='btn'>
-                  <span>FROM $125</span>
-                  <img src='./assets/img/icons/right-arrow-white.svg' alt=''>
-                </a>
-              </div>
+          <?php if (have_rows('offers_and_promotions_sidebar')): ?>
+            <div class='swiper-wrapper'>
+              <?php while (have_rows('offers_and_promotions_sidebar')): the_row();
+                $image = get_sub_field('image');
+                $title = get_sub_field('title');
+                $description = get_sub_field('description');
+                $price = get_sub_field('price');
+                ?>
+                <div class='swiper-slide'>
+                  <img class='back' src='<?php echo $image ?>' alt=''>
+                  <div class='content'>
+                    <div class='swiper-pagination'></div>
+                    <h3><?php echo $title ?></h3>
+                    <p><?php echo $description ?></p>
+                    <a class='btn'>
+                      <span><?php echo $price ?></span>
+                    </a>
+                  </div>
+                </div>
+              <?php endwhile; ?>
             </div>
-            <div class='swiper-slide'>
-              <img class='back' src='./assets/img/home-offers-1.jpg' alt=''>
-              <div class='content'>
-                <div class='swiper-pagination'></div>
-                <h3>Come Alive. Travel Longer</h3>
-                <p>What makes you come alive? Here’s your chance to find out, with up to 15% off long stays across
-                  Australia with the Independent Collection by EVENT.</p>
-                <a class='btn'><span>FROM $125</span><img src='./assets/img/icons/right-arrow-white.svg' alt=''>
-                </a>
-              </div>
-            </div>
-            <div class='swiper-slide'>
-              <img class='back' src='./assets/img/home-offers-1.jpg' alt=''>
-              <div class='content'>
-                <div class='swiper-pagination'></div>
-                <h3>Come Alive. Travel Longer</h3>
-                <p>What makes you come alive? Here’s your chance to find out, with up to 15% off long stays across
-                  Australia with the Independent Collection by EVENT.</p>
-                <a class='btn'><span>FROM $125</span><img src='./assets/img/icons/right-arrow-white.svg' alt=''>
-                </a>
-              </div>
-            </div>
-          </div>
+          <?php endif; ?>
+          <!--            <div class='swiper-slide'>-->
+          <!--              <img class='back' src='./assets/img/home-events.png' alt=''>-->
+          <!--              <div class='content'>-->
+          <!--                <div class='swiper-pagination'></div>-->
+          <!--                <h3>Come Alive. Travel Longer</h3>-->
+          <!--                <p>What makes you come alive? Here’s your chance to find out, with up to 15% off long stays across-->
+          <!--                  Australia with the Independent Collection by EVENT.</p>-->
+          <!--                <a class='btn'>-->
+          <!--                  <span>FROM $125</span>-->
+          <!--                  <img src='./assets/img/icons/right-arrow-white.svg' alt=''>-->
+          <!--                </a>-->
+          <!--              </div>-->
+          <!--            </div>-->
+          <!--            <div class='swiper-slide'>-->
+          <!--              <img class='back' src='./assets/img/home-offers-1.jpg' alt=''>-->
+          <!--              <div class='content'>-->
+          <!--                <div class='swiper-pagination'></div>-->
+          <!--                <h3>Come Alive. Travel Longer</h3>-->
+          <!--                <p>What makes you come alive? Here’s your chance to find out, with up to 15% off long stays across-->
+          <!--                  Australia with the Independent Collection by EVENT.</p>-->
+          <!--                <a class='btn'><span>FROM $125</span><img src='./assets/img/icons/right-arrow-white.svg' alt=''>-->
+          <!--                </a>-->
+          <!--              </div>-->
+          <!--            </div>-->
+          <!--            <div class='swiper-slide'>-->
+          <!--              <img class='back' src='./assets/img/home-offers-1.jpg' alt=''>-->
+          <!--              <div class='content'>-->
+          <!--                <div class='swiper-pagination'></div>-->
+          <!--                <h3>Come Alive. Travel Longer</h3>-->
+          <!--                <p>What makes you come alive? Here’s your chance to find out, with up to 15% off long stays across-->
+          <!--                  Australia with the Independent Collection by EVENT.</p>-->
+          <!--                <a class='btn'><span>FROM $125</span><img src='./assets/img/icons/right-arrow-white.svg' alt=''>-->
+          <!--                </a>-->
+          <!--              </div>-->
+          <!--            </div>-->
           <div class="swiper-btn swiper-button-prev"></div>
           <div class="swiper-btn swiper-button-next"></div>
         </div>
