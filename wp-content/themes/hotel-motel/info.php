@@ -7,7 +7,7 @@
       <?php if (have_rows('info_list')): ?>
         <ul class="slides">
           <?php while (have_rows('info_list')): the_row();
-            $item_1 = get_sub_field('item_1');
+           ц $item_1 = get_sub_field('item_1');
             $item_2 = get_sub_field('item_2');
             $item_3 = get_sub_field('item_3');
             $item_4 = get_sub_field('item_4');

@@ -50,21 +50,12 @@
             <?php if (have_rows('list_find_us')): ?>
               <ul class="slides">
                 <?php while (have_rows('list_find_us')): the_row();
-                  $tel = get_sub_field('tel');
-                  $email = get_sub_field('email');
-                  $location = get_sub_field('location');
+                  $icon = get_sub_field('find_us_icon');
+                  $contact = get_sub_field('find_us_contacts');
                   ?>
                   <li>
-                    <img src='<?php echo get_template_directory_uri(); ?>/assets/img/icons/phone.svg' alt=''>
-                    <p><?php echo $tel ?></p>
-                  </li>
-                  <li>
-                    <img src='<?php echo get_template_directory_uri(); ?>/assets/img/icons/mail.svg' alt=''>
-                    <p><?php echo $email ?></p>
-                  </li>
-                  <li>
-                    <img src='<?php echo get_template_directory_uri(); ?>/assets/img/icons/loc.svg' alt=''>
-                    <p><?php echo $location ?></p>
+                    <img src='<?php echo $icon ?>' alt=''>
+                    <p><?php echo $contact ?></p>
                   </li>
                 <?php endwhile; ?>
               </ul>
@@ -74,39 +65,15 @@
             <div class='content'>
               <h2><?php echo get_field('welcome_subtitle_2') ?></h2>
               <div class='facilities-wrapper'>
-                <?php if (have_rows('list_fecilities')): ?>
+                <?php if (have_rows('list_facilities')): ?>
                   <ul class="slides">
-                    <?php while (have_rows('list_fecilities')): the_row();
-                      $wifi = get_sub_field('wifi');
-                      $reception = get_sub_field('reception');
-                      $parking = get_sub_field('parking');
-                      $restaurant = get_sub_field('restaurant');
-                      $gym = get_sub_field('gym');
-                      $pool = get_sub_field('pool');
+                    <?php while (have_rows('list_facilities')): the_row();
+                      $icon = get_sub_field('facilities_icon');
+                      $info = get_sub_field('facilities_info');
                       ?>
                       <li>
-                        <img src='<?php echo get_template_directory_uri(); ?>/assets/img/icons/wifi.svg' alt=''>
-                        <p><?php echo $wifi ?></p>
-                      </li>
-                      <li>
-                        <img src='<?php echo get_template_directory_uri(); ?>/assets/img/icons/reception.svg' alt=''>
-                        <p><?php echo $reception ?></p>
-                      </li>
-                      <li>
-                        <img src='<?php echo get_template_directory_uri(); ?>/assets/img/icons/parking.svg' alt=''>
-                        <p><?php echo $parking ?></p>
-                      </li>
-                      <li>
-                        <img src='<?php echo get_template_directory_uri(); ?>/assets/img/icons/restaurant.svg' alt=''>
-                        <p><?php echo $restaurant ?></p>
-                      </li>
-                      <li>
-                        <img src='<?php echo get_template_directory_uri(); ?>/assets/img/icons/gym.svg' alt=''>
-                        <p><?php echo $gym ?></p>
-                      </li>
-                      <li>
-                        <img src='<?php echo get_template_directory_uri(); ?>/assets/img/icons/pool.svg' alt=''>
-                        <p><?php echo $pool ?></p>
+                        <img src='<?php echo $icon ?>' alt=''>
+                        <p><?php echo $info ?></p>
                       </li>
                     <?php endwhile; ?>
                   </ul>
