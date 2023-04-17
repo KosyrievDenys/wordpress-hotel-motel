@@ -149,14 +149,14 @@
     </section>
     <section class='events'>
       <div class='container'>
-        <img class='back' src='<?php echo get_template_directory_uri(); ?>/assets/img/home-events.png' alt=''>
+        <img class='back' src='<?php echo get_field('events_back') ?>' alt=''>
         <div class='block-content'>
           <div class='content'>
             <h2><?php echo get_field('events_title') ?></h2>
             <p class='description'>`
               <?php echo get_field('events_description') ?>
             </p>
-            <img class='img' src='<?php echo get_template_directory_uri(); ?>/assets/img/home-events.png' alt=''>
+            <img class='img' src='<?php echo get_field('events_back') ?>' alt=''>
             <?php if (have_rows('list_events')): ?>
               <ul class="slides">
                 <?php while (have_rows('list_events')): the_row();
@@ -166,18 +166,12 @@
                   ?>
                   <li>
                     <p><?php echo $private_dining ?></p>
-                    <img src='<?php echo get_template_directory_uri(); ?>/assets/img/icons/right-arrow-white.svg'
-                         alt=''>
                   </li>
                   <li>
                     <p><?php echo $private_dining_2 ?></p>
-                    <img src='<?php echo get_template_directory_uri(); ?>/assets/img/icons/right-arrow-white.svg'
-                         alt=''>
                   </li>
                   <li>
                     <p><?php echo $weddings ?></p>
-                    <img src='<?php echo get_template_directory_uri(); ?>/assets/img/icons/right-arrow-white.svg'
-                         alt=''>
                   </li>
                 <?php endwhile; ?>
               </ul>
