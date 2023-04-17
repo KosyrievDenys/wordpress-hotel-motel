@@ -93,55 +93,28 @@
         <h2><?php echo get_field('rooms_title') ?></h2>
       </div>
       <div class='swiper swiper-rooms'>
-        <div class='swiper-wrapper'>
-          <div class='swiper-slide'>
-            <img class='img-room' src='<?php echo get_template_directory_uri(); ?>/assets/img/accessible-rooms-1.jpg'
-                 alt=''>
-            <div class='link'>
-              <a href='#'>
-                <h3><?php echo get_field('rooms_title_slide_1') ?></h3>
-                <img class='img-right-arrow'
-                     src='<?php echo get_template_directory_uri(); ?>/assets/img/icons/right-arrow-white.svg' alt=''>
-              </a>
-              <p><?php echo get_field('rooms_description_slide_1') ?></p>
-            </div>
+        <?php if (have_rows('rooms_slider')): ?>
+          <div class='swiper-wrapper'>
+            <?php while (have_rows('rooms_slider')): the_row();
+              $photo = get_sub_field('rooms_photo');
+              $title = get_sub_field('rooms_title');
+              $description = get_sub_field('rooms_description');
+              ?>
+              <div class='swiper-slide'>
+                <img class='img-room' src='<?php echo $photo ?>' alt=''>
+                <div class='link'>
+                  <a href='#'>
+                    <h3><?php echo $title ?></h3>
+                    <img class='img-right-arrow'
+                         src=''
+                         alt=''>
+                  </a>
+                  <p><?php echo $description ?></p>
+                </div>
+              </div>
+            <?php endwhile; ?>
           </div>
-          <div class='swiper-slide'>
-            <img class='img-room' src='<?php echo get_template_directory_uri(); ?>/assets/img/home-events.png' alt=''>
-            <div class='link'>
-              <a href='#'>
-                <h3><?php echo get_field('rooms_title_slide_1') ?></h3>
-                <img class='img-right-arrow'
-                     src='<?php echo get_template_directory_uri(); ?>/assets/img/icons/right-arrow-white.svg' alt=''>
-              </a>
-              <p><?php echo get_field('rooms_description_slide_1') ?></p>
-            </div>
-          </div>
-          <div class='swiper-slide'>
-            <img class='img-room' src='<?php echo get_template_directory_uri(); ?>/assets/img/accessible-rooms-1.jpg'
-                 alt=''>
-            <div class='link'>
-              <a href='#'>
-                <h3><?php echo get_field('rooms_title_slide_1') ?></h3>
-                <img class='img-right-arrow'
-                     src='<?php echo get_template_directory_uri(); ?>/assets/img/icons/right-arrow-white.svg' alt=''>
-              </a>
-              <p><?php echo get_field('rooms_description_slide_1') ?></p>
-            </div>
-          </div>
-          <div class='swiper-slide'>
-            <img class='img-room' src='<?php echo get_template_directory_uri(); ?>/assets/img/accessible-rooms-1.jpg'
-                 alt=''>
-            <div class='link'>
-              <a href='#'>
-                <h3><?php echo get_field('rooms_title_slide_1') ?></h3>
-                <img class='img-right-arrow'
-                     src='<?php echo get_template_directory_uri(); ?>/assets/img/icons/right-arrow-white.svg' alt=''>
-              </a>
-              <p><?php echo get_field('rooms_description_slide_1') ?></p>
-            </div>
-          </div>
-        </div>
+        <?php endif; ?>
         <div class="swiper-pagination"></div>
         <div class="swiper-btn swiper-button-prev"></div>
         <div class="swiper-btn swiper-button-next"></div>
